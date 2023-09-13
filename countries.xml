@@ -1,0 +1,1999 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Sep 13, 2023 at 07:47 PM
+- Server version: 10.4.28-MariaDB
+- PHP Version: 8.2.4
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name=" dbname" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="countries">
+                CREATE TABLE `countries` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `country_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+                  `nationality` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+                  `dial_code` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+                  `iso_alpha_2` varchar(11) NOT NULL,
+                  `iso_alpha_3` varchar(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=246 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'dbname'
+    -->
+    <database name="dbname">
+        <!-- Table countries -->
+        <table name="countries">
+            <column name="id">1</column>
+            <column name="country_name">Afghanistan</column>
+            <column name="nationality">Afghan</column>
+            <column name="dial_code">+93</column>
+            <column name="iso_alpha_2">AF</column>
+            <column name="iso_alpha_3">AFG</column>
+        </table>
+        <table name="countries">
+            <column name="id">2</column>
+            <column name="country_name">Aland Islands</column>
+            <column name="nationality">Aland Islands</column>
+            <column name="dial_code">+358</column>
+            <column name="iso_alpha_2">AX</column>
+            <column name="iso_alpha_3">ALA</column>
+        </table>
+        <table name="countries">
+            <column name="id">3</column>
+            <column name="country_name">Albania</column>
+            <column name="nationality">Albanian</column>
+            <column name="dial_code">+355</column>
+            <column name="iso_alpha_2">AL</column>
+            <column name="iso_alpha_3">ALB</column>
+        </table>
+        <table name="countries">
+            <column name="id">4</column>
+            <column name="country_name">Algeria</column>
+            <column name="nationality">Algerian</column>
+            <column name="dial_code">+213</column>
+            <column name="iso_alpha_2">DZ</column>
+            <column name="iso_alpha_3">DZA</column>
+        </table>
+        <table name="countries">
+            <column name="id">5</column>
+            <column name="country_name">American Samoa</column>
+            <column name="nationality">American Saoma</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">AS</column>
+            <column name="iso_alpha_3">ASM</column>
+        </table>
+        <table name="countries">
+            <column name="id">6</column>
+            <column name="country_name">Andorra</column>
+            <column name="nationality">Andorran</column>
+            <column name="dial_code">+376</column>
+            <column name="iso_alpha_2">AD</column>
+            <column name="iso_alpha_3">AND</column>
+        </table>
+        <table name="countries">
+            <column name="id">7</column>
+            <column name="country_name">Angola</column>
+            <column name="nationality">Angolan</column>
+            <column name="dial_code">+244</column>
+            <column name="iso_alpha_2">AO</column>
+            <column name="iso_alpha_3">AGO</column>
+        </table>
+        <table name="countries">
+            <column name="id">8</column>
+            <column name="country_name">Anguilla</column>
+            <column name="nationality">Anguillan</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">AI</column>
+            <column name="iso_alpha_3">AIA</column>
+        </table>
+        <table name="countries">
+            <column name="id">9</column>
+            <column name="country_name">Antarctica</column>
+            <column name="nationality">Antarctican</column>
+            <column name="dial_code">+672</column>
+            <column name="iso_alpha_2">AQ</column>
+            <column name="iso_alpha_3">ATA</column>
+        </table>
+        <table name="countries">
+            <column name="id">10</column>
+            <column name="country_name">Antigua And Barbuda</column>
+            <column name="nationality">Antiguans</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">AG</column>
+            <column name="iso_alpha_3">ATG</column>
+        </table>
+        <table name="countries">
+            <column name="id">11</column>
+            <column name="country_name">Argentina</column>
+            <column name="nationality">Argentinean</column>
+            <column name="dial_code">+54</column>
+            <column name="iso_alpha_2">AR</column>
+            <column name="iso_alpha_3">ARG</column>
+        </table>
+        <table name="countries">
+            <column name="id">12</column>
+            <column name="country_name">Armenia</column>
+            <column name="nationality">Armenian</column>
+            <column name="dial_code">+374</column>
+            <column name="iso_alpha_2">AM</column>
+            <column name="iso_alpha_3">ARM</column>
+        </table>
+        <table name="countries">
+            <column name="id">13</column>
+            <column name="country_name">Aruba</column>
+            <column name="nationality">Aruba</column>
+            <column name="dial_code">+297</column>
+            <column name="iso_alpha_2">AW</column>
+            <column name="iso_alpha_3">ABW</column>
+        </table>
+        <table name="countries">
+            <column name="id">14</column>
+            <column name="country_name">Australia</column>
+            <column name="nationality">Australian</column>
+            <column name="dial_code">+61</column>
+            <column name="iso_alpha_2">AU</column>
+            <column name="iso_alpha_3">AUS</column>
+        </table>
+        <table name="countries">
+            <column name="id">15</column>
+            <column name="country_name">Austria</column>
+            <column name="nationality">Austrian</column>
+            <column name="dial_code">+43</column>
+            <column name="iso_alpha_2">AT</column>
+            <column name="iso_alpha_3">AUT</column>
+        </table>
+        <table name="countries">
+            <column name="id">16</column>
+            <column name="country_name">Azerbaijan</column>
+            <column name="nationality">Azerbaijani</column>
+            <column name="dial_code">+994</column>
+            <column name="iso_alpha_2">AZ</column>
+            <column name="iso_alpha_3">AZE</column>
+        </table>
+        <table name="countries">
+            <column name="id">17</column>
+            <column name="country_name">Bahamas</column>
+            <column name="nationality">Bahamian</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">BS</column>
+            <column name="iso_alpha_3">BHS</column>
+        </table>
+        <table name="countries">
+            <column name="id">18</column>
+            <column name="country_name">Bahrain</column>
+            <column name="nationality">Bahraini</column>
+            <column name="dial_code">+973</column>
+            <column name="iso_alpha_2">BH</column>
+            <column name="iso_alpha_3">BHR</column>
+        </table>
+        <table name="countries">
+            <column name="id">19</column>
+            <column name="country_name">Bangladesh</column>
+            <column name="nationality">Bangladeshi</column>
+            <column name="dial_code">+880</column>
+            <column name="iso_alpha_2">BD</column>
+            <column name="iso_alpha_3">BGD</column>
+        </table>
+        <table name="countries">
+            <column name="id">20</column>
+            <column name="country_name">Barbados</column>
+            <column name="nationality">Barbudans</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">BB</column>
+            <column name="iso_alpha_3">BRB</column>
+        </table>
+        <table name="countries">
+            <column name="id">21</column>
+            <column name="country_name">Belarus</column>
+            <column name="nationality">Belarusian</column>
+            <column name="dial_code">+375</column>
+            <column name="iso_alpha_2">BY</column>
+            <column name="iso_alpha_3">BLR</column>
+        </table>
+        <table name="countries">
+            <column name="id">22</column>
+            <column name="country_name">Belgium</column>
+            <column name="nationality">Belgian</column>
+            <column name="dial_code">+32</column>
+            <column name="iso_alpha_2">BE</column>
+            <column name="iso_alpha_3">BEL</column>
+        </table>
+        <table name="countries">
+            <column name="id">23</column>
+            <column name="country_name">Belize</column>
+            <column name="nationality">Belizean</column>
+            <column name="dial_code">+501</column>
+            <column name="iso_alpha_2">BZ</column>
+            <column name="iso_alpha_3">BLZ</column>
+        </table>
+        <table name="countries">
+            <column name="id">24</column>
+            <column name="country_name">Benin</column>
+            <column name="nationality">Beninese</column>
+            <column name="dial_code">+229</column>
+            <column name="iso_alpha_2">BJ</column>
+            <column name="iso_alpha_3">BEN</column>
+        </table>
+        <table name="countries">
+            <column name="id">25</column>
+            <column name="country_name">Bermuda</column>
+            <column name="nationality">Bermudan</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">BM</column>
+            <column name="iso_alpha_3">BMU</column>
+        </table>
+        <table name="countries">
+            <column name="id">26</column>
+            <column name="country_name">Bhutan</column>
+            <column name="nationality">Bhutanese</column>
+            <column name="dial_code">+975</column>
+            <column name="iso_alpha_2">BT</column>
+            <column name="iso_alpha_3">BTN</column>
+        </table>
+        <table name="countries">
+            <column name="id">27</column>
+            <column name="country_name">Bolivia</column>
+            <column name="nationality">Bolivian</column>
+            <column name="dial_code">+591</column>
+            <column name="iso_alpha_2">BO</column>
+            <column name="iso_alpha_3">BOL</column>
+        </table>
+        <table name="countries">
+            <column name="id">28</column>
+            <column name="country_name">Bosnia And Herzegovina</column>
+            <column name="nationality">Bosnian</column>
+            <column name="dial_code">+387</column>
+            <column name="iso_alpha_2">BA</column>
+            <column name="iso_alpha_3">BIH</column>
+        </table>
+        <table name="countries">
+            <column name="id">29</column>
+            <column name="country_name">Botswana</column>
+            <column name="nationality">Botswananian</column>
+            <column name="dial_code">+267</column>
+            <column name="iso_alpha_2">BW</column>
+            <column name="iso_alpha_3">BWA</column>
+        </table>
+        <table name="countries">
+            <column name="id">30</column>
+            <column name="country_name">Bouvet Island</column>
+            <column name="nationality">Bouvet Island</column>
+            <column name="dial_code">+47</column>
+            <column name="iso_alpha_2">BV</column>
+            <column name="iso_alpha_3">BVT</column>
+        </table>
+        <table name="countries">
+            <column name="id">31</column>
+            <column name="country_name">Brazil</column>
+            <column name="nationality">Brazilian</column>
+            <column name="dial_code">+55</column>
+            <column name="iso_alpha_2">BR</column>
+            <column name="iso_alpha_3">BRA</column>
+        </table>
+        <table name="countries">
+            <column name="id">32</column>
+            <column name="country_name">British Indian Ocean Territory</column>
+            <column name="nationality">British Indian Ocean Territory</column>
+            <column name="dial_code">+246</column>
+            <column name="iso_alpha_2">IO</column>
+            <column name="iso_alpha_3">IOT</column>
+        </table>
+        <table name="countries">
+            <column name="id">33</column>
+            <column name="country_name">Virgin Islands, British</column>
+            <column name="nationality">Virgin Islands, British</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">VG</column>
+            <column name="iso_alpha_3">VGB</column>
+        </table>
+        <table name="countries">
+            <column name="id">34</column>
+            <column name="country_name">Brunei Darussalam</column>
+            <column name="nationality">Bruneian</column>
+            <column name="dial_code">+673</column>
+            <column name="iso_alpha_2">BN</column>
+            <column name="iso_alpha_3">BRN</column>
+        </table>
+        <table name="countries">
+            <column name="id">35</column>
+            <column name="country_name">Bulgaria</column>
+            <column name="nationality">Bulgarian</column>
+            <column name="dial_code">+359</column>
+            <column name="iso_alpha_2">BG</column>
+            <column name="iso_alpha_3">BGR</column>
+        </table>
+        <table name="countries">
+            <column name="id">36</column>
+            <column name="country_name">Burkina Faso</column>
+            <column name="nationality">Burkinabe</column>
+            <column name="dial_code">+226</column>
+            <column name="iso_alpha_2">BF</column>
+            <column name="iso_alpha_3">BFA</column>
+        </table>
+        <table name="countries">
+            <column name="id">37</column>
+            <column name="country_name">Burundi</column>
+            <column name="nationality">Burundian</column>
+            <column name="dial_code">+257</column>
+            <column name="iso_alpha_2">BI</column>
+            <column name="iso_alpha_3">BDI</column>
+        </table>
+        <table name="countries">
+            <column name="id">38</column>
+            <column name="country_name">Cambodia</column>
+            <column name="nationality">Cambodian</column>
+            <column name="dial_code">+855</column>
+            <column name="iso_alpha_2">KH</column>
+            <column name="iso_alpha_3">KHM</column>
+        </table>
+        <table name="countries">
+            <column name="id">39</column>
+            <column name="country_name">Cameroon</column>
+            <column name="nationality">Cameroonian</column>
+            <column name="dial_code">+237</column>
+            <column name="iso_alpha_2">CM</column>
+            <column name="iso_alpha_3">CMR</column>
+        </table>
+        <table name="countries">
+            <column name="id">40</column>
+            <column name="country_name">Canada</column>
+            <column name="nationality">Canadian</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">CA</column>
+            <column name="iso_alpha_3">CAN</column>
+        </table>
+        <table name="countries">
+            <column name="id">41</column>
+            <column name="country_name">Cape Verde</column>
+            <column name="nationality">Cape Verdean</column>
+            <column name="dial_code">+238</column>
+            <column name="iso_alpha_2">CV</column>
+            <column name="iso_alpha_3">CPV</column>
+        </table>
+        <table name="countries">
+            <column name="id">42</column>
+            <column name="country_name">Cayman Islands</column>
+            <column name="nationality">Cayman Islands</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">KY</column>
+            <column name="iso_alpha_3">CYM</column>
+        </table>
+        <table name="countries">
+            <column name="id">43</column>
+            <column name="country_name">Central African Republic</column>
+            <column name="nationality">Central African</column>
+            <column name="dial_code">+236</column>
+            <column name="iso_alpha_2">CF</column>
+            <column name="iso_alpha_3">CAF</column>
+        </table>
+        <table name="countries">
+            <column name="id">44</column>
+            <column name="country_name">Chad</column>
+            <column name="nationality">Chadian</column>
+            <column name="dial_code">+235</column>
+            <column name="iso_alpha_2">TD</column>
+            <column name="iso_alpha_3">TCD</column>
+        </table>
+        <table name="countries">
+            <column name="id">45</column>
+            <column name="country_name">Chile</column>
+            <column name="nationality">Chilean</column>
+            <column name="dial_code">+56</column>
+            <column name="iso_alpha_2">CL</column>
+            <column name="iso_alpha_3">CHL</column>
+        </table>
+        <table name="countries">
+            <column name="id">46</column>
+            <column name="country_name">China</column>
+            <column name="nationality">Chinese</column>
+            <column name="dial_code">+86</column>
+            <column name="iso_alpha_2">CN</column>
+            <column name="iso_alpha_3">CHN</column>
+        </table>
+        <table name="countries">
+            <column name="id">47</column>
+            <column name="country_name">Christmas Island</column>
+            <column name="nationality">Christmas Island</column>
+            <column name="dial_code">+61</column>
+            <column name="iso_alpha_2">CX</column>
+            <column name="iso_alpha_3">CXR</column>
+        </table>
+        <table name="countries">
+            <column name="id">48</column>
+            <column name="country_name">Cocos (Keeling) Islands</column>
+            <column name="nationality">Cocos (Keeling) Islands</column>
+            <column name="dial_code">+61</column>
+            <column name="iso_alpha_2">CC</column>
+            <column name="iso_alpha_3">CCK</column>
+        </table>
+        <table name="countries">
+            <column name="id">49</column>
+            <column name="country_name">Colombia</column>
+            <column name="nationality">Colombian</column>
+            <column name="dial_code">+57</column>
+            <column name="iso_alpha_2">CO</column>
+            <column name="iso_alpha_3">COL</column>
+        </table>
+        <table name="countries">
+            <column name="id">50</column>
+            <column name="country_name">Comoros</column>
+            <column name="nationality">Comoran</column>
+            <column name="dial_code">+269</column>
+            <column name="iso_alpha_2">KM</column>
+            <column name="iso_alpha_3">COM</column>
+        </table>
+        <table name="countries">
+            <column name="id">51</column>
+            <column name="country_name">Congo</column>
+            <column name="nationality">Congolese</column>
+            <column name="dial_code">+242</column>
+            <column name="iso_alpha_2">CG</column>
+            <column name="iso_alpha_3">COG</column>
+        </table>
+        <table name="countries">
+            <column name="id">52</column>
+            <column name="country_name">Cook Island</column>
+            <column name="nationality">Cook Islander</column>
+            <column name="dial_code">+682</column>
+            <column name="iso_alpha_2">CK</column>
+            <column name="iso_alpha_3">COK</column>
+        </table>
+        <table name="countries">
+            <column name="id">53</column>
+            <column name="country_name">Costa Rica</column>
+            <column name="nationality">Costa Rican</column>
+            <column name="dial_code">+506</column>
+            <column name="iso_alpha_2">CR</column>
+            <column name="iso_alpha_3">CRI</column>
+        </table>
+        <table name="countries">
+            <column name="id">54</column>
+            <column name="country_name">Cote D&#039;Ivoire</column>
+            <column name="nationality">Cote D&#039;Ivoires</column>
+            <column name="dial_code">+225</column>
+            <column name="iso_alpha_2">CI</column>
+            <column name="iso_alpha_3">CIV</column>
+        </table>
+        <table name="countries">
+            <column name="id">55</column>
+            <column name="country_name">Croatia</column>
+            <column name="nationality">Croatian</column>
+            <column name="dial_code">+385</column>
+            <column name="iso_alpha_2">HR</column>
+            <column name="iso_alpha_3">HRV</column>
+        </table>
+        <table name="countries">
+            <column name="id">56</column>
+            <column name="country_name">Cuba</column>
+            <column name="nationality">Cuban</column>
+            <column name="dial_code">+53</column>
+            <column name="iso_alpha_2">CU</column>
+            <column name="iso_alpha_3">CUB</column>
+        </table>
+        <table name="countries">
+            <column name="id">57</column>
+            <column name="country_name">Curacao</column>
+            <column name="nationality">****</column>
+            <column name="dial_code">+599</column>
+            <column name="iso_alpha_2">CW</column>
+            <column name="iso_alpha_3">CUW</column>
+        </table>
+        <table name="countries">
+            <column name="id">58</column>
+            <column name="country_name">Cyprus</column>
+            <column name="nationality">Cypriot</column>
+            <column name="dial_code">+357</column>
+            <column name="iso_alpha_2">CY</column>
+            <column name="iso_alpha_3">CYP</column>
+        </table>
+        <table name="countries">
+            <column name="id">59</column>
+            <column name="country_name">Czech Republic</column>
+            <column name="nationality">Czech</column>
+            <column name="dial_code">+420</column>
+            <column name="iso_alpha_2">CZ</column>
+            <column name="iso_alpha_3">CZE</column>
+        </table>
+        <table name="countries">
+            <column name="id">60</column>
+            <column name="country_name">Democratic Republic of Congo</column>
+            <column name="nationality">Congolese</column>
+            <column name="dial_code">+243</column>
+            <column name="iso_alpha_2">CD</column>
+            <column name="iso_alpha_3">COD</column>
+        </table>
+        <table name="countries">
+            <column name="id">61</column>
+            <column name="country_name">Denmark</column>
+            <column name="nationality">Danish</column>
+            <column name="dial_code">+45</column>
+            <column name="iso_alpha_2">DK</column>
+            <column name="iso_alpha_3">DNK</column>
+        </table>
+        <table name="countries">
+            <column name="id">62</column>
+            <column name="country_name">Djibouti</column>
+            <column name="nationality">Djibouti</column>
+            <column name="dial_code">+253</column>
+            <column name="iso_alpha_2">DJ</column>
+            <column name="iso_alpha_3">DJI</column>
+        </table>
+        <table name="countries">
+            <column name="id">63</column>
+            <column name="country_name">Dominica</column>
+            <column name="nationality">Dominican</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">DM</column>
+            <column name="iso_alpha_3">DMA</column>
+        </table>
+        <table name="countries">
+            <column name="id">64</column>
+            <column name="country_name">Dominican Republic</column>
+            <column name="nationality">Dominican Republic</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">DO</column>
+            <column name="iso_alpha_3">DOM</column>
+        </table>
+        <table name="countries">
+            <column name="id">65</column>
+            <column name="country_name">Ecuador</column>
+            <column name="nationality">Ecuadorean</column>
+            <column name="dial_code">+593</column>
+            <column name="iso_alpha_2">EC</column>
+            <column name="iso_alpha_3">ECU</column>
+        </table>
+        <table name="countries">
+            <column name="id">66</column>
+            <column name="country_name">Egypt</column>
+            <column name="nationality">Egyptian</column>
+            <column name="dial_code">+20</column>
+            <column name="iso_alpha_2">EG</column>
+            <column name="iso_alpha_3">EGY</column>
+        </table>
+        <table name="countries">
+            <column name="id">67</column>
+            <column name="country_name">El Salvador</column>
+            <column name="nationality">El Salvadorian</column>
+            <column name="dial_code">+503</column>
+            <column name="iso_alpha_2">SV</column>
+            <column name="iso_alpha_3">SLV</column>
+        </table>
+        <table name="countries">
+            <column name="id">68</column>
+            <column name="country_name">Equatorial Guinea</column>
+            <column name="nationality">Equatorial Guinean</column>
+            <column name="dial_code">+240</column>
+            <column name="iso_alpha_2">GQ</column>
+            <column name="iso_alpha_3">GNQ</column>
+        </table>
+        <table name="countries">
+            <column name="id">69</column>
+            <column name="country_name">Eritrea</column>
+            <column name="nationality">Eritrean</column>
+            <column name="dial_code">+291</column>
+            <column name="iso_alpha_2">ER</column>
+            <column name="iso_alpha_3">ERI</column>
+        </table>
+        <table name="countries">
+            <column name="id">70</column>
+            <column name="country_name">Estonia</column>
+            <column name="nationality">Estonian</column>
+            <column name="dial_code">+372</column>
+            <column name="iso_alpha_2">EE</column>
+            <column name="iso_alpha_3">EST</column>
+        </table>
+        <table name="countries">
+            <column name="id">71</column>
+            <column name="country_name">Ethiopia</column>
+            <column name="nationality">Ethiopian</column>
+            <column name="dial_code">+251</column>
+            <column name="iso_alpha_2">ET</column>
+            <column name="iso_alpha_3">ETH</column>
+        </table>
+        <table name="countries">
+            <column name="id">72</column>
+            <column name="country_name">Falkland Islands (Malvinas)</column>
+            <column name="nationality">Falkland Islands (Malvinas)</column>
+            <column name="dial_code">+500</column>
+            <column name="iso_alpha_2">FK</column>
+            <column name="iso_alpha_3">FLK</column>
+        </table>
+        <table name="countries">
+            <column name="id">73</column>
+            <column name="country_name">Faroe Islands</column>
+            <column name="nationality">Faroe Islands</column>
+            <column name="dial_code">+298</column>
+            <column name="iso_alpha_2">FO</column>
+            <column name="iso_alpha_3">FRO</column>
+        </table>
+        <table name="countries">
+            <column name="id">74</column>
+            <column name="country_name">Fiji</column>
+            <column name="nationality">Fijian</column>
+            <column name="dial_code">+679</column>
+            <column name="iso_alpha_2">FJ</column>
+            <column name="iso_alpha_3">FJI</column>
+        </table>
+        <table name="countries">
+            <column name="id">75</column>
+            <column name="country_name">Finland</column>
+            <column name="nationality">Finnish</column>
+            <column name="dial_code">+358</column>
+            <column name="iso_alpha_2">FI</column>
+            <column name="iso_alpha_3">FIN</column>
+        </table>
+        <table name="countries">
+            <column name="id">76</column>
+            <column name="country_name">France</column>
+            <column name="nationality">French</column>
+            <column name="dial_code">+33</column>
+            <column name="iso_alpha_2">FR</column>
+            <column name="iso_alpha_3">FRA</column>
+        </table>
+        <table name="countries">
+            <column name="id">77</column>
+            <column name="country_name">French Guiana</column>
+            <column name="nationality">French Guianese</column>
+            <column name="dial_code">+594</column>
+            <column name="iso_alpha_2">GF</column>
+            <column name="iso_alpha_3">GUF</column>
+        </table>
+        <table name="countries">
+            <column name="id">78</column>
+            <column name="country_name">French Polynesia</column>
+            <column name="nationality">French Polynesia</column>
+            <column name="dial_code">+689</column>
+            <column name="iso_alpha_2">PF</column>
+            <column name="iso_alpha_3">PYF</column>
+        </table>
+        <table name="countries">
+            <column name="id">79</column>
+            <column name="country_name">Gabon</column>
+            <column name="nationality">Gabonese</column>
+            <column name="dial_code">+241</column>
+            <column name="iso_alpha_2">GA</column>
+            <column name="iso_alpha_3">GAB</column>
+        </table>
+        <table name="countries">
+            <column name="id">80</column>
+            <column name="country_name">Gambia</column>
+            <column name="nationality">Gambian</column>
+            <column name="dial_code">+220</column>
+            <column name="iso_alpha_2">GM</column>
+            <column name="iso_alpha_3">GMB</column>
+        </table>
+        <table name="countries">
+            <column name="id">81</column>
+            <column name="country_name">Georgia</column>
+            <column name="nationality">Georgian</column>
+            <column name="dial_code">+995</column>
+            <column name="iso_alpha_2">GE</column>
+            <column name="iso_alpha_3">GEO</column>
+        </table>
+        <table name="countries">
+            <column name="id">82</column>
+            <column name="country_name">Germany</column>
+            <column name="nationality">German</column>
+            <column name="dial_code">+49</column>
+            <column name="iso_alpha_2">DE</column>
+            <column name="iso_alpha_3">DEU</column>
+        </table>
+        <table name="countries">
+            <column name="id">83</column>
+            <column name="country_name">Ghana</column>
+            <column name="nationality">Ghanaian</column>
+            <column name="dial_code">+233</column>
+            <column name="iso_alpha_2">GH</column>
+            <column name="iso_alpha_3">GHA</column>
+        </table>
+        <table name="countries">
+            <column name="id">84</column>
+            <column name="country_name">Gibraltar</column>
+            <column name="nationality">Gibraltarian</column>
+            <column name="dial_code">+350</column>
+            <column name="iso_alpha_2">GI</column>
+            <column name="iso_alpha_3">GIB</column>
+        </table>
+        <table name="countries">
+            <column name="id">85</column>
+            <column name="country_name">Greece</column>
+            <column name="nationality">Greek</column>
+            <column name="dial_code">+30</column>
+            <column name="iso_alpha_2">GR</column>
+            <column name="iso_alpha_3">GRC</column>
+        </table>
+        <table name="countries">
+            <column name="id">86</column>
+            <column name="country_name">Greenland</column>
+            <column name="nationality">Greenlandian</column>
+            <column name="dial_code">+299</column>
+            <column name="iso_alpha_2">GL</column>
+            <column name="iso_alpha_3">GRL</column>
+        </table>
+        <table name="countries">
+            <column name="id">87</column>
+            <column name="country_name">Grenada</column>
+            <column name="nationality">Grenadian</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">GD</column>
+            <column name="iso_alpha_3">GRD</column>
+        </table>
+        <table name="countries">
+            <column name="id">88</column>
+            <column name="country_name">Guadeloupe</column>
+            <column name="nationality">Guadeloupe</column>
+            <column name="dial_code">+590</column>
+            <column name="iso_alpha_2">GP</column>
+            <column name="iso_alpha_3">GLP</column>
+        </table>
+        <table name="countries">
+            <column name="id">89</column>
+            <column name="country_name">Guam</column>
+            <column name="nationality">Guamian</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">GU</column>
+            <column name="iso_alpha_3">GUM</column>
+        </table>
+        <table name="countries">
+            <column name="id">90</column>
+            <column name="country_name">Guatemala</column>
+            <column name="nationality">Guatemalan</column>
+            <column name="dial_code">+502</column>
+            <column name="iso_alpha_2">GT</column>
+            <column name="iso_alpha_3">GTM</column>
+        </table>
+        <table name="countries">
+            <column name="id">91</column>
+            <column name="country_name">Guernsey</column>
+            <column name="nationality">Guerns</column>
+            <column name="dial_code">+44</column>
+            <column name="iso_alpha_2">GG</column>
+            <column name="iso_alpha_3">GGY</column>
+        </table>
+        <table name="countries">
+            <column name="id">92</column>
+            <column name="country_name">Guinea</column>
+            <column name="nationality">Guinean</column>
+            <column name="dial_code">+224</column>
+            <column name="iso_alpha_2">GN</column>
+            <column name="iso_alpha_3">GIN</column>
+        </table>
+        <table name="countries">
+            <column name="id">93</column>
+            <column name="country_name">Guinea-Bissau</column>
+            <column name="nationality">Bissau-Guinean</column>
+            <column name="dial_code">+245</column>
+            <column name="iso_alpha_2">GW</column>
+            <column name="iso_alpha_3">GNB</column>
+        </table>
+        <table name="countries">
+            <column name="id">94</column>
+            <column name="country_name">Guyana</column>
+            <column name="nationality">Guyanese</column>
+            <column name="dial_code">+592</column>
+            <column name="iso_alpha_2">GY</column>
+            <column name="iso_alpha_3">GUY</column>
+        </table>
+        <table name="countries">
+            <column name="id">95</column>
+            <column name="country_name">Haiti</column>
+            <column name="nationality">Haitian</column>
+            <column name="dial_code">+509</column>
+            <column name="iso_alpha_2">HT</column>
+            <column name="iso_alpha_3">HTI</column>
+        </table>
+        <table name="countries">
+            <column name="id">96</column>
+            <column name="country_name">Honduras</column>
+            <column name="nationality">Honduran</column>
+            <column name="dial_code">+504</column>
+            <column name="iso_alpha_2">HN</column>
+            <column name="iso_alpha_3">HND</column>
+        </table>
+        <table name="countries">
+            <column name="id">97</column>
+            <column name="country_name">Hong Kong</column>
+            <column name="nationality">Hong Kong (Chinese)</column>
+            <column name="dial_code">+852</column>
+            <column name="iso_alpha_2">HK</column>
+            <column name="iso_alpha_3">HKG</column>
+        </table>
+        <table name="countries">
+            <column name="id">98</column>
+            <column name="country_name">Hungary</column>
+            <column name="nationality">Hungarian</column>
+            <column name="dial_code">+36</column>
+            <column name="iso_alpha_2">HU</column>
+            <column name="iso_alpha_3">HUN</column>
+        </table>
+        <table name="countries">
+            <column name="id">99</column>
+            <column name="country_name">Iceland</column>
+            <column name="nationality">Icelander</column>
+            <column name="dial_code">+354</column>
+            <column name="iso_alpha_2">IS</column>
+            <column name="iso_alpha_3">ISL</column>
+        </table>
+        <table name="countries">
+            <column name="id">100</column>
+            <column name="country_name">India</column>
+            <column name="nationality">Indian</column>
+            <column name="dial_code">+91</column>
+            <column name="iso_alpha_2">IN</column>
+            <column name="iso_alpha_3">IND</column>
+        </table>
+        <table name="countries">
+            <column name="id">101</column>
+            <column name="country_name">Indonesia</column>
+            <column name="nationality">Indonesian</column>
+            <column name="dial_code">+62</column>
+            <column name="iso_alpha_2">ID</column>
+            <column name="iso_alpha_3">IDN</column>
+        </table>
+        <table name="countries">
+            <column name="id">102</column>
+            <column name="country_name">Iran</column>
+            <column name="nationality">Iranian</column>
+            <column name="dial_code">+98</column>
+            <column name="iso_alpha_2">IR</column>
+            <column name="iso_alpha_3">IRN</column>
+        </table>
+        <table name="countries">
+            <column name="id">103</column>
+            <column name="country_name">Iraq</column>
+            <column name="nationality">Iraqi</column>
+            <column name="dial_code">+964</column>
+            <column name="iso_alpha_2">IQ</column>
+            <column name="iso_alpha_3">IRQ</column>
+        </table>
+        <table name="countries">
+            <column name="id">104</column>
+            <column name="country_name">Ireland</column>
+            <column name="nationality">Irish</column>
+            <column name="dial_code">+353</column>
+            <column name="iso_alpha_2">IE</column>
+            <column name="iso_alpha_3">IRL</column>
+        </table>
+        <table name="countries">
+            <column name="id">105</column>
+            <column name="country_name">Isle Of Man</column>
+            <column name="nationality">Isle Of Man</column>
+            <column name="dial_code">+44</column>
+            <column name="iso_alpha_2">IM</column>
+            <column name="iso_alpha_3">IMN</column>
+        </table>
+        <table name="countries">
+            <column name="id">106</column>
+            <column name="country_name">Israel</column>
+            <column name="nationality">Israeli</column>
+            <column name="dial_code">+972</column>
+            <column name="iso_alpha_2">IL</column>
+            <column name="iso_alpha_3">ISR</column>
+        </table>
+        <table name="countries">
+            <column name="id">107</column>
+            <column name="country_name">Italy</column>
+            <column name="nationality">Italian</column>
+            <column name="dial_code">+39</column>
+            <column name="iso_alpha_2">IT</column>
+            <column name="iso_alpha_3">ITA</column>
+        </table>
+        <table name="countries">
+            <column name="id">108</column>
+            <column name="country_name">Jamaica</column>
+            <column name="nationality">Jamaican</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">JM</column>
+            <column name="iso_alpha_3">JAM</column>
+        </table>
+        <table name="countries">
+            <column name="id">109</column>
+            <column name="country_name">Japan</column>
+            <column name="nationality">Japanese</column>
+            <column name="dial_code">+81</column>
+            <column name="iso_alpha_2">JP</column>
+            <column name="iso_alpha_3">JPN</column>
+        </table>
+        <table name="countries">
+            <column name="id">110</column>
+            <column name="country_name">Jersey</column>
+            <column name="nationality">Jersey</column>
+            <column name="dial_code">+44</column>
+            <column name="iso_alpha_2">JE</column>
+            <column name="iso_alpha_3">JEY</column>
+        </table>
+        <table name="countries">
+            <column name="id">111</column>
+            <column name="country_name">Jordan</column>
+            <column name="nationality">Jordanian</column>
+            <column name="dial_code">+962</column>
+            <column name="iso_alpha_2">JO</column>
+            <column name="iso_alpha_3">JOR</column>
+        </table>
+        <table name="countries">
+            <column name="id">112</column>
+            <column name="country_name">Kazakhstan</column>
+            <column name="nationality">Kazakhstani</column>
+            <column name="dial_code">+7</column>
+            <column name="iso_alpha_2">KZ</column>
+            <column name="iso_alpha_3">KAZ</column>
+        </table>
+        <table name="countries">
+            <column name="id">113</column>
+            <column name="country_name">Kenya</column>
+            <column name="nationality">Kenyan</column>
+            <column name="dial_code">+254</column>
+            <column name="iso_alpha_2">KE</column>
+            <column name="iso_alpha_3">KEN</column>
+        </table>
+        <table name="countries">
+            <column name="id">114</column>
+            <column name="country_name">Kiribati</column>
+            <column name="nationality">Kiribatin</column>
+            <column name="dial_code">+686</column>
+            <column name="iso_alpha_2">KI</column>
+            <column name="iso_alpha_3">KIR</column>
+        </table>
+        <table name="countries">
+            <column name="id">115</column>
+            <column name="country_name">Kosovo</column>
+            <column name="nationality">Kosovar</column>
+            <column name="dial_code">+383</column>
+            <column name="iso_alpha_2">XK</column>
+            <column name="iso_alpha_3">XXK</column>
+        </table>
+        <table name="countries">
+            <column name="id">116</column>
+            <column name="country_name">Korea South</column>
+            <column name="nationality">Korean (South)</column>
+            <column name="dial_code">+82</column>
+            <column name="iso_alpha_2">KR</column>
+            <column name="iso_alpha_3">KOR</column>
+        </table>
+        <table name="countries">
+            <column name="id">117</column>
+            <column name="country_name">Korea North</column>
+            <column name="nationality">Korean (North)</column>
+            <column name="dial_code">+850</column>
+            <column name="iso_alpha_2">KP</column>
+            <column name="iso_alpha_3">PRK</column>
+        </table>
+        <table name="countries">
+            <column name="id">118</column>
+            <column name="country_name">Kuwait</column>
+            <column name="nationality">Kuwaiti</column>
+            <column name="dial_code">+965</column>
+            <column name="iso_alpha_2">KW</column>
+            <column name="iso_alpha_3">KWT</column>
+        </table>
+        <table name="countries">
+            <column name="id">119</column>
+            <column name="country_name">Kyrgyzstan</column>
+            <column name="nationality">Kyrgyz</column>
+            <column name="dial_code">+996</column>
+            <column name="iso_alpha_2">KG</column>
+            <column name="iso_alpha_3">KGZ</column>
+        </table>
+        <table name="countries">
+            <column name="id">120</column>
+            <column name="country_name">Lao People&#039;s Democratic Republic</column>
+            <column name="nationality">Laotians</column>
+            <column name="dial_code">+856</column>
+            <column name="iso_alpha_2">LA</column>
+            <column name="iso_alpha_3">LAO</column>
+        </table>
+        <table name="countries">
+            <column name="id">121</column>
+            <column name="country_name">Latvia</column>
+            <column name="nationality">Latvian</column>
+            <column name="dial_code">+371</column>
+            <column name="iso_alpha_2">LV</column>
+            <column name="iso_alpha_3">LVA</column>
+        </table>
+        <table name="countries">
+            <column name="id">122</column>
+            <column name="country_name">Lebanon</column>
+            <column name="nationality">Lebanese</column>
+            <column name="dial_code">+961</column>
+            <column name="iso_alpha_2">LB</column>
+            <column name="iso_alpha_3">LBN</column>
+        </table>
+        <table name="countries">
+            <column name="id">123</column>
+            <column name="country_name">Lesotho</column>
+            <column name="nationality">Lesothon</column>
+            <column name="dial_code">+266</column>
+            <column name="iso_alpha_2">LS</column>
+            <column name="iso_alpha_3">LSO</column>
+        </table>
+        <table name="countries">
+            <column name="id">124</column>
+            <column name="country_name">Liberia</column>
+            <column name="nationality">Liberian</column>
+            <column name="dial_code">+231</column>
+            <column name="iso_alpha_2">LR</column>
+            <column name="iso_alpha_3">LBR</column>
+        </table>
+        <table name="countries">
+            <column name="id">125</column>
+            <column name="country_name">Libya</column>
+            <column name="nationality">Libyan</column>
+            <column name="dial_code">+218</column>
+            <column name="iso_alpha_2">LY</column>
+            <column name="iso_alpha_3">LBY</column>
+        </table>
+        <table name="countries">
+            <column name="id">126</column>
+            <column name="country_name">Liechtenstein</column>
+            <column name="nationality">Liechtensteiner</column>
+            <column name="dial_code">+423</column>
+            <column name="iso_alpha_2">LI</column>
+            <column name="iso_alpha_3">LIE</column>
+        </table>
+        <table name="countries">
+            <column name="id">127</column>
+            <column name="country_name">Lithuania</column>
+            <column name="nationality">Lithuanian</column>
+            <column name="dial_code">+370</column>
+            <column name="iso_alpha_2">LT</column>
+            <column name="iso_alpha_3">LTU</column>
+        </table>
+        <table name="countries">
+            <column name="id">128</column>
+            <column name="country_name">Luxembourg</column>
+            <column name="nationality">Luxembourger</column>
+            <column name="dial_code">+352</column>
+            <column name="iso_alpha_2">LU</column>
+            <column name="iso_alpha_3">LUX</column>
+        </table>
+        <table name="countries">
+            <column name="id">129</column>
+            <column name="country_name">Macao</column>
+            <column name="nationality">Macedonianv</column>
+            <column name="dial_code">+853</column>
+            <column name="iso_alpha_2">MO</column>
+            <column name="iso_alpha_3">MAC</column>
+        </table>
+        <table name="countries">
+            <column name="id">130</column>
+            <column name="country_name">Macedonia</column>
+            <column name="nationality">Macedonian</column>
+            <column name="dial_code">+389</column>
+            <column name="iso_alpha_2">MK</column>
+            <column name="iso_alpha_3">MKD</column>
+        </table>
+        <table name="countries">
+            <column name="id">131</column>
+            <column name="country_name">Madagascar</column>
+            <column name="nationality">Madagascarian</column>
+            <column name="dial_code">+261</column>
+            <column name="iso_alpha_2">MG</column>
+            <column name="iso_alpha_3">MDG</column>
+        </table>
+        <table name="countries">
+            <column name="id">132</column>
+            <column name="country_name">Malawi</column>
+            <column name="nationality">Malawian</column>
+            <column name="dial_code">+265</column>
+            <column name="iso_alpha_2">MW</column>
+            <column name="iso_alpha_3">MWI</column>
+        </table>
+        <table name="countries">
+            <column name="id">133</column>
+            <column name="country_name">Malaysia</column>
+            <column name="nationality">Malaysian</column>
+            <column name="dial_code">+60</column>
+            <column name="iso_alpha_2">MY</column>
+            <column name="iso_alpha_3">MYS</column>
+        </table>
+        <table name="countries">
+            <column name="id">134</column>
+            <column name="country_name">Maldives</column>
+            <column name="nationality">Maldivan</column>
+            <column name="dial_code">+960</column>
+            <column name="iso_alpha_2">MV</column>
+            <column name="iso_alpha_3">MDV</column>
+        </table>
+        <table name="countries">
+            <column name="id">135</column>
+            <column name="country_name">Mali</column>
+            <column name="nationality">Malian</column>
+            <column name="dial_code">+223</column>
+            <column name="iso_alpha_2">ML</column>
+            <column name="iso_alpha_3">MLI</column>
+        </table>
+        <table name="countries">
+            <column name="id">136</column>
+            <column name="country_name">Malta</column>
+            <column name="nationality">Maltese</column>
+            <column name="dial_code">+356</column>
+            <column name="iso_alpha_2">MT</column>
+            <column name="iso_alpha_3">MLT</column>
+        </table>
+        <table name="countries">
+            <column name="id">137</column>
+            <column name="country_name">Marshall Islands</column>
+            <column name="nationality">Marshallese</column>
+            <column name="dial_code">+692</column>
+            <column name="iso_alpha_2">MH</column>
+            <column name="iso_alpha_3">MHL</column>
+        </table>
+        <table name="countries">
+            <column name="id">138</column>
+            <column name="country_name">Martinique</column>
+            <column name="nationality">Martinicans</column>
+            <column name="dial_code">+596</column>
+            <column name="iso_alpha_2">MQ</column>
+            <column name="iso_alpha_3">MTG</column>
+        </table>
+        <table name="countries">
+            <column name="id">139</column>
+            <column name="country_name">Mauritania</column>
+            <column name="nationality">Mauritian</column>
+            <column name="dial_code">+222</column>
+            <column name="iso_alpha_2">MR</column>
+            <column name="iso_alpha_3">MRT</column>
+        </table>
+        <table name="countries">
+            <column name="id">140</column>
+            <column name="country_name">Mauritius</column>
+            <column name="nationality">Mauritiusian</column>
+            <column name="dial_code">+230</column>
+            <column name="iso_alpha_2">MU</column>
+            <column name="iso_alpha_3">MUS</column>
+        </table>
+        <table name="countries">
+            <column name="id">141</column>
+            <column name="country_name">Mayotte</column>
+            <column name="nationality">Mayottes</column>
+            <column name="dial_code">+262</column>
+            <column name="iso_alpha_2">YT</column>
+            <column name="iso_alpha_3">MYT</column>
+        </table>
+        <table name="countries">
+            <column name="id">142</column>
+            <column name="country_name">Mexico</column>
+            <column name="nationality">Mexican</column>
+            <column name="dial_code">+52</column>
+            <column name="iso_alpha_2">MX</column>
+            <column name="iso_alpha_3">MEX</column>
+        </table>
+        <table name="countries">
+            <column name="id">143</column>
+            <column name="country_name">Micronesia</column>
+            <column name="nationality">Micronesians</column>
+            <column name="dial_code">+691</column>
+            <column name="iso_alpha_2">FM</column>
+            <column name="iso_alpha_3">FSM</column>
+        </table>
+        <table name="countries">
+            <column name="id">144</column>
+            <column name="country_name">Moldova</column>
+            <column name="nationality">Moldovan</column>
+            <column name="dial_code">+373</column>
+            <column name="iso_alpha_2">MD</column>
+            <column name="iso_alpha_3">MDA</column>
+        </table>
+        <table name="countries">
+            <column name="id">145</column>
+            <column name="country_name">Monaco</column>
+            <column name="nationality">Monacan</column>
+            <column name="dial_code">+377</column>
+            <column name="iso_alpha_2">MC</column>
+            <column name="iso_alpha_3">MCO</column>
+        </table>
+        <table name="countries">
+            <column name="id">146</column>
+            <column name="country_name">Mongolia</column>
+            <column name="nationality">Mongolian</column>
+            <column name="dial_code">+976</column>
+            <column name="iso_alpha_2">MN</column>
+            <column name="iso_alpha_3">MNG</column>
+        </table>
+        <table name="countries">
+            <column name="id">147</column>
+            <column name="country_name">Montenegro</column>
+            <column name="nationality">Montenegrin</column>
+            <column name="dial_code">+382</column>
+            <column name="iso_alpha_2">ME</column>
+            <column name="iso_alpha_3">MNE</column>
+        </table>
+        <table name="countries">
+            <column name="id">148</column>
+            <column name="country_name">Montserrat</column>
+            <column name="nationality">Montserratan</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">MS</column>
+            <column name="iso_alpha_3">MSR</column>
+        </table>
+        <table name="countries">
+            <column name="id">149</column>
+            <column name="country_name">Morocco</column>
+            <column name="nationality">Moroccan</column>
+            <column name="dial_code">+212</column>
+            <column name="iso_alpha_2">MA</column>
+            <column name="iso_alpha_3">MAR</column>
+        </table>
+        <table name="countries">
+            <column name="id">150</column>
+            <column name="country_name">Mozambique</column>
+            <column name="nationality">Mozambican</column>
+            <column name="dial_code">+258</column>
+            <column name="iso_alpha_2">MZ</column>
+            <column name="iso_alpha_3">MOZ</column>
+        </table>
+        <table name="countries">
+            <column name="id">151</column>
+            <column name="country_name">Myanmar</column>
+            <column name="nationality">Myanmarian</column>
+            <column name="dial_code">+95</column>
+            <column name="iso_alpha_2">MM</column>
+            <column name="iso_alpha_3">MMR</column>
+        </table>
+        <table name="countries">
+            <column name="id">152</column>
+            <column name="country_name">Namibia</column>
+            <column name="nationality">Namibian</column>
+            <column name="dial_code">+264</column>
+            <column name="iso_alpha_2">NA</column>
+            <column name="iso_alpha_3">NAM</column>
+        </table>
+        <table name="countries">
+            <column name="id">153</column>
+            <column name="country_name">Nauru</column>
+            <column name="nationality">Nauruan</column>
+            <column name="dial_code">+264</column>
+            <column name="iso_alpha_2">NR</column>
+            <column name="iso_alpha_3">NRU</column>
+        </table>
+        <table name="countries">
+            <column name="id">154</column>
+            <column name="country_name">Nepal</column>
+            <column name="nationality">Nepalese</column>
+            <column name="dial_code">+977</column>
+            <column name="iso_alpha_2">NP</column>
+            <column name="iso_alpha_3">NPL</column>
+        </table>
+        <table name="countries">
+            <column name="id">155</column>
+            <column name="country_name">Netherlands</column>
+            <column name="nationality">Dutch</column>
+            <column name="dial_code">+31</column>
+            <column name="iso_alpha_2">NL</column>
+            <column name="iso_alpha_3">NDL</column>
+        </table>
+        <table name="countries">
+            <column name="id">156</column>
+            <column name="country_name">Netherlands Antilles</column>
+            <column name="nationality">Netherlands Antilles</column>
+            <column name="dial_code">+599</column>
+            <column name="iso_alpha_2">AN</column>
+            <column name="iso_alpha_3">ANT</column>
+        </table>
+        <table name="countries">
+            <column name="id">157</column>
+            <column name="country_name">New Caledonia</column>
+            <column name="nationality">Caledonian</column>
+            <column name="dial_code">+687</column>
+            <column name="iso_alpha_2">NC</column>
+            <column name="iso_alpha_3">NCL</column>
+        </table>
+        <table name="countries">
+            <column name="id">158</column>
+            <column name="country_name">New Zealand</column>
+            <column name="nationality">New Zealander</column>
+            <column name="dial_code">+64</column>
+            <column name="iso_alpha_2">NZ</column>
+            <column name="iso_alpha_3">NZL</column>
+        </table>
+        <table name="countries">
+            <column name="id">159</column>
+            <column name="country_name">Nicaragua</column>
+            <column name="nationality">Nicaraguan</column>
+            <column name="dial_code">+505</column>
+            <column name="iso_alpha_2">NI</column>
+            <column name="iso_alpha_3">NIC</column>
+        </table>
+        <table name="countries">
+            <column name="id">160</column>
+            <column name="country_name">Niger</column>
+            <column name="nationality">Nigerien</column>
+            <column name="dial_code">+227</column>
+            <column name="iso_alpha_2">NE</column>
+            <column name="iso_alpha_3">NER</column>
+        </table>
+        <table name="countries">
+            <column name="id">161</column>
+            <column name="country_name">Nigeria</column>
+            <column name="nationality">Nigerian</column>
+            <column name="dial_code">+234</column>
+            <column name="iso_alpha_2">NG</column>
+            <column name="iso_alpha_3">NGA</column>
+        </table>
+        <table name="countries">
+            <column name="id">162</column>
+            <column name="country_name">Niue</column>
+            <column name="nationality">Niue</column>
+            <column name="dial_code">+683</column>
+            <column name="iso_alpha_2">NU</column>
+            <column name="iso_alpha_3">NIU</column>
+        </table>
+        <table name="countries">
+            <column name="id">163</column>
+            <column name="country_name">Norfolk Island</column>
+            <column name="nationality">Norfolk Islander</column>
+            <column name="dial_code">+672</column>
+            <column name="iso_alpha_2">NF</column>
+            <column name="iso_alpha_3">NFK</column>
+        </table>
+        <table name="countries">
+            <column name="id">164</column>
+            <column name="country_name">Northern Mariana Islands</column>
+            <column name="nationality">Northern Mariana Islander</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">MP</column>
+            <column name="iso_alpha_3">MNP</column>
+        </table>
+        <table name="countries">
+            <column name="id">165</column>
+            <column name="country_name">Norway</column>
+            <column name="nationality">Norwegian</column>
+            <column name="dial_code">+47</column>
+            <column name="iso_alpha_2">NO</column>
+            <column name="iso_alpha_3">NOR</column>
+        </table>
+        <table name="countries">
+            <column name="id">166</column>
+            <column name="country_name">Oman</column>
+            <column name="nationality">Omani</column>
+            <column name="dial_code">+968</column>
+            <column name="iso_alpha_2">OM</column>
+            <column name="iso_alpha_3">OMN</column>
+        </table>
+        <table name="countries">
+            <column name="id">167</column>
+            <column name="country_name">Pakistan</column>
+            <column name="nationality">Pakistani</column>
+            <column name="dial_code">+92</column>
+            <column name="iso_alpha_2">PK</column>
+            <column name="iso_alpha_3">PAK</column>
+        </table>
+        <table name="countries">
+            <column name="id">168</column>
+            <column name="country_name">Palau</column>
+            <column name="nationality">Palauan</column>
+            <column name="dial_code">+680</column>
+            <column name="iso_alpha_2">PW</column>
+            <column name="iso_alpha_3">PLW</column>
+        </table>
+        <table name="countries">
+            <column name="id">169</column>
+            <column name="country_name">Palestine</column>
+            <column name="nationality">Palestinian</column>
+            <column name="dial_code">+970</column>
+            <column name="iso_alpha_2">PS</column>
+            <column name="iso_alpha_3">PSE</column>
+        </table>
+        <table name="countries">
+            <column name="id">170</column>
+            <column name="country_name">Panama</column>
+            <column name="nationality">Panamanian</column>
+            <column name="dial_code">+507</column>
+            <column name="iso_alpha_2">PA</column>
+            <column name="iso_alpha_3">PAN</column>
+        </table>
+        <table name="countries">
+            <column name="id">171</column>
+            <column name="country_name">Papua New Guinea</column>
+            <column name="nationality">Papua New Guinean</column>
+            <column name="dial_code">+675</column>
+            <column name="iso_alpha_2">PG</column>
+            <column name="iso_alpha_3">PNG</column>
+        </table>
+        <table name="countries">
+            <column name="id">172</column>
+            <column name="country_name">Paraguay</column>
+            <column name="nationality">Paraguayan</column>
+            <column name="dial_code">+595</column>
+            <column name="iso_alpha_2">PY</column>
+            <column name="iso_alpha_3">PRY</column>
+        </table>
+        <table name="countries">
+            <column name="id">173</column>
+            <column name="country_name">Peru</column>
+            <column name="nationality">Peruvian</column>
+            <column name="dial_code">+51</column>
+            <column name="iso_alpha_2">PE</column>
+            <column name="iso_alpha_3">PER</column>
+        </table>
+        <table name="countries">
+            <column name="id">174</column>
+            <column name="country_name">Philippines</column>
+            <column name="nationality">Philippine</column>
+            <column name="dial_code">+63</column>
+            <column name="iso_alpha_2">PH</column>
+            <column name="iso_alpha_3">PHL</column>
+        </table>
+        <table name="countries">
+            <column name="id">175</column>
+            <column name="country_name">Pitcairn</column>
+            <column name="nationality">Pitcairn</column>
+            <column name="dial_code">+64</column>
+            <column name="iso_alpha_2">PN</column>
+            <column name="iso_alpha_3">PCN</column>
+        </table>
+        <table name="countries">
+            <column name="id">176</column>
+            <column name="country_name">Poland</column>
+            <column name="nationality">Polish</column>
+            <column name="dial_code">+48</column>
+            <column name="iso_alpha_2">PL</column>
+            <column name="iso_alpha_3">POL</column>
+        </table>
+        <table name="countries">
+            <column name="id">177</column>
+            <column name="country_name">Portugal</column>
+            <column name="nationality">Portuguese</column>
+            <column name="dial_code">+351</column>
+            <column name="iso_alpha_2">PT</column>
+            <column name="iso_alpha_3">PRT</column>
+        </table>
+        <table name="countries">
+            <column name="id">178</column>
+            <column name="country_name">Puerto Rico</column>
+            <column name="nationality">Puerto Rican</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">PR</column>
+            <column name="iso_alpha_3">PRI</column>
+        </table>
+        <table name="countries">
+            <column name="id">179</column>
+            <column name="country_name">Qatar</column>
+            <column name="nationality">Qatari</column>
+            <column name="dial_code">+974</column>
+            <column name="iso_alpha_2">QA</column>
+            <column name="iso_alpha_3">QAT</column>
+        </table>
+        <table name="countries">
+            <column name="id">180</column>
+            <column name="country_name">Reunion</column>
+            <column name="nationality">Reunion</column>
+            <column name="dial_code">+262</column>
+            <column name="iso_alpha_2">RE</column>
+            <column name="iso_alpha_3">REU</column>
+        </table>
+        <table name="countries">
+            <column name="id">181</column>
+            <column name="country_name">Romania</column>
+            <column name="nationality">Romanian</column>
+            <column name="dial_code">+40</column>
+            <column name="iso_alpha_2">RO</column>
+            <column name="iso_alpha_3">ROU</column>
+        </table>
+        <table name="countries">
+            <column name="id">182</column>
+            <column name="country_name">Russian Federation</column>
+            <column name="nationality">Russian</column>
+            <column name="dial_code">+7</column>
+            <column name="iso_alpha_2">RU</column>
+            <column name="iso_alpha_3">RUS</column>
+        </table>
+        <table name="countries">
+            <column name="id">183</column>
+            <column name="country_name">Rwanda</column>
+            <column name="nationality">Rwandan</column>
+            <column name="dial_code">+250</column>
+            <column name="iso_alpha_2">RW</column>
+            <column name="iso_alpha_3">RWA</column>
+        </table>
+        <table name="countries">
+            <column name="id">184</column>
+            <column name="country_name">Saint Barthelemy</column>
+            <column name="nationality">Saint Barthélemois</column>
+            <column name="dial_code">+590</column>
+            <column name="iso_alpha_2">BL</column>
+            <column name="iso_alpha_3">BLM</column>
+        </table>
+        <table name="countries">
+            <column name="id">185</column>
+            <column name="country_name">Saint Helena</column>
+            <column name="nationality">Saint Helenians</column>
+            <column name="dial_code">+290</column>
+            <column name="iso_alpha_2">SH</column>
+            <column name="iso_alpha_3">SHN</column>
+        </table>
+        <table name="countries">
+            <column name="id">186</column>
+            <column name="country_name">Saint Kitts And Nevis</column>
+            <column name="nationality">Kittitian/Nevisian</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">KN</column>
+            <column name="iso_alpha_3">KNA</column>
+        </table>
+        <table name="countries">
+            <column name="id">187</column>
+            <column name="country_name">Saint Lucia</column>
+            <column name="nationality">Saint Lucian</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">LC</column>
+            <column name="iso_alpha_3">LCA</column>
+        </table>
+        <table name="countries">
+            <column name="id">188</column>
+            <column name="country_name">Saint Martin</column>
+            <column name="nationality">Saint Martiner</column>
+            <column name="dial_code">+590</column>
+            <column name="iso_alpha_2">MF</column>
+            <column name="iso_alpha_3">MAF</column>
+        </table>
+        <table name="countries">
+            <column name="id">189</column>
+            <column name="country_name">Saint Pierre And Miquelon</column>
+            <column name="nationality">Saint-Pierrais/Miquelonnais</column>
+            <column name="dial_code">+508</column>
+            <column name="iso_alpha_2">PM</column>
+            <column name="iso_alpha_3">PSM</column>
+        </table>
+        <table name="countries">
+            <column name="id">190</column>
+            <column name="country_name">Saint Vincent And Grenadines</column>
+            <column name="nationality">Vincentians</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">VC</column>
+            <column name="iso_alpha_3">VCT</column>
+        </table>
+        <table name="countries">
+            <column name="id">191</column>
+            <column name="country_name">Samoa</column>
+            <column name="nationality">Samoan</column>
+            <column name="dial_code">+685</column>
+            <column name="iso_alpha_2">WS</column>
+            <column name="iso_alpha_3">WSM</column>
+        </table>
+        <table name="countries">
+            <column name="id">192</column>
+            <column name="country_name">San Marino</column>
+            <column name="nationality">San Marinese</column>
+            <column name="dial_code">+378</column>
+            <column name="iso_alpha_2">SM</column>
+            <column name="iso_alpha_3">SMR</column>
+        </table>
+        <table name="countries">
+            <column name="id">193</column>
+            <column name="country_name">Sao Tome And Principe</column>
+            <column name="nationality">Sao Tomean</column>
+            <column name="dial_code">+239</column>
+            <column name="iso_alpha_2">ST</column>
+            <column name="iso_alpha_3">STP</column>
+        </table>
+        <table name="countries">
+            <column name="id">194</column>
+            <column name="country_name">Saudi Arabia</column>
+            <column name="nationality">Saudi</column>
+            <column name="dial_code">+996</column>
+            <column name="iso_alpha_2">SA</column>
+            <column name="iso_alpha_3">SAU</column>
+        </table>
+        <table name="countries">
+            <column name="id">195</column>
+            <column name="country_name">Senegal</column>
+            <column name="nationality">Senegalese</column>
+            <column name="dial_code">+221</column>
+            <column name="iso_alpha_2">SN</column>
+            <column name="iso_alpha_3">SEN</column>
+        </table>
+        <table name="countries">
+            <column name="id">196</column>
+            <column name="country_name">Serbia</column>
+            <column name="nationality">Serbian</column>
+            <column name="dial_code">+381</column>
+            <column name="iso_alpha_2">RS</column>
+            <column name="iso_alpha_3">SRB</column>
+        </table>
+        <table name="countries">
+            <column name="id">197</column>
+            <column name="country_name">Seychelles</column>
+            <column name="nationality">Seychellois</column>
+            <column name="dial_code">+248</column>
+            <column name="iso_alpha_2">SC</column>
+            <column name="iso_alpha_3">SYC</column>
+        </table>
+        <table name="countries">
+            <column name="id">198</column>
+            <column name="country_name">Sierra Leone</column>
+            <column name="nationality">Sierra Leonean</column>
+            <column name="dial_code">+232</column>
+            <column name="iso_alpha_2">SL</column>
+            <column name="iso_alpha_3">SLE</column>
+        </table>
+        <table name="countries">
+            <column name="id">199</column>
+            <column name="country_name">Sint Maarten</column>
+            <column name="nationality">Sint Maartener</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">SX</column>
+            <column name="iso_alpha_3">SXM</column>
+        </table>
+        <table name="countries">
+            <column name="id">200</column>
+            <column name="country_name">Slovakia</column>
+            <column name="nationality">Slovakian</column>
+            <column name="dial_code">+421</column>
+            <column name="iso_alpha_2">SK</column>
+            <column name="iso_alpha_3">SVK</column>
+        </table>
+        <table name="countries">
+            <column name="id">201</column>
+            <column name="country_name">Slovenia</column>
+            <column name="nationality">Slovenian</column>
+            <column name="dial_code">+386</column>
+            <column name="iso_alpha_2">SI</column>
+            <column name="iso_alpha_3">SVN</column>
+        </table>
+        <table name="countries">
+            <column name="id">202</column>
+            <column name="country_name">Solomon Islands</column>
+            <column name="nationality">Solomon Islander</column>
+            <column name="dial_code">+677</column>
+            <column name="iso_alpha_2">SB</column>
+            <column name="iso_alpha_3">SLB</column>
+        </table>
+        <table name="countries">
+            <column name="id">203</column>
+            <column name="country_name">Somalia</column>
+            <column name="nationality">Somali</column>
+            <column name="dial_code">+252</column>
+            <column name="iso_alpha_2">SO</column>
+            <column name="iso_alpha_3">SOM</column>
+        </table>
+        <table name="countries">
+            <column name="id">204</column>
+            <column name="country_name">South Africa</column>
+            <column name="nationality">South African</column>
+            <column name="dial_code">+27</column>
+            <column name="iso_alpha_2">ZA</column>
+            <column name="iso_alpha_3">ZAF</column>
+        </table>
+        <table name="countries">
+            <column name="id">205</column>
+            <column name="country_name">South Sudan</column>
+            <column name="nationality">South Sudanese</column>
+            <column name="dial_code">+211</column>
+            <column name="iso_alpha_2">SS</column>
+            <column name="iso_alpha_3">SSD</column>
+        </table>
+        <table name="countries">
+            <column name="id">206</column>
+            <column name="country_name">Spain</column>
+            <column name="nationality">Spanish</column>
+            <column name="dial_code">+34</column>
+            <column name="iso_alpha_2">ES</column>
+            <column name="iso_alpha_3">ESP</column>
+        </table>
+        <table name="countries">
+            <column name="id">207</column>
+            <column name="country_name">Sri Lanka</column>
+            <column name="nationality">Sri Lankan</column>
+            <column name="dial_code">+94</column>
+            <column name="iso_alpha_2">LK</column>
+            <column name="iso_alpha_3">LKA</column>
+        </table>
+        <table name="countries">
+            <column name="id">208</column>
+            <column name="country_name">Sudan</column>
+            <column name="nationality">Sudanese</column>
+            <column name="dial_code">+249</column>
+            <column name="iso_alpha_2">SD</column>
+            <column name="iso_alpha_3">SDN</column>
+        </table>
+        <table name="countries">
+            <column name="id">209</column>
+            <column name="country_name">Suriname</column>
+            <column name="nationality">Surinamese</column>
+            <column name="dial_code">+597</column>
+            <column name="iso_alpha_2">SR</column>
+            <column name="iso_alpha_3">SUR</column>
+        </table>
+        <table name="countries">
+            <column name="id">210</column>
+            <column name="country_name">Svalbard And Jan Mayen</column>
+            <column name="nationality">Svalbard And Jan Mayen</column>
+            <column name="dial_code">+47</column>
+            <column name="iso_alpha_2">SJ</column>
+            <column name="iso_alpha_3">SJM</column>
+        </table>
+        <table name="countries">
+            <column name="id">211</column>
+            <column name="country_name">Swaziland</column>
+            <column name="nationality">Swazi</column>
+            <column name="dial_code">+268</column>
+            <column name="iso_alpha_2">SZ</column>
+            <column name="iso_alpha_3">SWZ</column>
+        </table>
+        <table name="countries">
+            <column name="id">212</column>
+            <column name="country_name">Sweden</column>
+            <column name="nationality">Swedish</column>
+            <column name="dial_code">+46</column>
+            <column name="iso_alpha_2">SE</column>
+            <column name="iso_alpha_3">SWE</column>
+        </table>
+        <table name="countries">
+            <column name="id">213</column>
+            <column name="country_name">Switzerland</column>
+            <column name="nationality">Swiss</column>
+            <column name="dial_code">+41</column>
+            <column name="iso_alpha_2">CH</column>
+            <column name="iso_alpha_3">CHE</column>
+        </table>
+        <table name="countries">
+            <column name="id">214</column>
+            <column name="country_name">Syria</column>
+            <column name="nationality">Syrian</column>
+            <column name="dial_code">+963</column>
+            <column name="iso_alpha_2">SY</column>
+            <column name="iso_alpha_3">SYR</column>
+        </table>
+        <table name="countries">
+            <column name="id">215</column>
+            <column name="country_name">Taiwan</column>
+            <column name="nationality">Taiwanese</column>
+            <column name="dial_code">+886</column>
+            <column name="iso_alpha_2">TW</column>
+            <column name="iso_alpha_3">TWN</column>
+        </table>
+        <table name="countries">
+            <column name="id">216</column>
+            <column name="country_name">Tajikistan</column>
+            <column name="nationality">Tajik</column>
+            <column name="dial_code">+992</column>
+            <column name="iso_alpha_2">TJ</column>
+            <column name="iso_alpha_3">TJK</column>
+        </table>
+        <table name="countries">
+            <column name="id">217</column>
+            <column name="country_name">Tanzania</column>
+            <column name="nationality">Tanzanian</column>
+            <column name="dial_code">+255</column>
+            <column name="iso_alpha_2">TZ</column>
+            <column name="iso_alpha_3">TZA</column>
+        </table>
+        <table name="countries">
+            <column name="id">218</column>
+            <column name="country_name">Thailand</column>
+            <column name="nationality">Thai</column>
+            <column name="dial_code">+66</column>
+            <column name="iso_alpha_2">TH</column>
+            <column name="iso_alpha_3">THA</column>
+        </table>
+        <table name="countries">
+            <column name="id">219</column>
+            <column name="country_name">Timor-Leste</column>
+            <column name="nationality">Timorese</column>
+            <column name="dial_code">+670</column>
+            <column name="iso_alpha_2">TL</column>
+            <column name="iso_alpha_3">TLS</column>
+        </table>
+        <table name="countries">
+            <column name="id">220</column>
+            <column name="country_name">Togo</column>
+            <column name="nationality">Togolese</column>
+            <column name="dial_code">+228</column>
+            <column name="iso_alpha_2">TG</column>
+            <column name="iso_alpha_3">TGO</column>
+        </table>
+        <table name="countries">
+            <column name="id">221</column>
+            <column name="country_name">Tokelau</column>
+            <column name="nationality">Tokelau</column>
+            <column name="dial_code">+690</column>
+            <column name="iso_alpha_2">TK</column>
+            <column name="iso_alpha_3">TKL</column>
+        </table>
+        <table name="countries">
+            <column name="id">222</column>
+            <column name="country_name">Tonga</column>
+            <column name="nationality">Tongan</column>
+            <column name="dial_code">+676</column>
+            <column name="iso_alpha_2">TO</column>
+            <column name="iso_alpha_3">TON</column>
+        </table>
+        <table name="countries">
+            <column name="id">223</column>
+            <column name="country_name">Trinidad And Tobago</column>
+            <column name="nationality">Trinidadian/Tobagonian</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">TT</column>
+            <column name="iso_alpha_3">TTO</column>
+        </table>
+        <table name="countries">
+            <column name="id">224</column>
+            <column name="country_name">Tunisia</column>
+            <column name="nationality">Tunisian</column>
+            <column name="dial_code">+216</column>
+            <column name="iso_alpha_2">TN</column>
+            <column name="iso_alpha_3">TUN</column>
+        </table>
+        <table name="countries">
+            <column name="id">225</column>
+            <column name="country_name">Turkey</column>
+            <column name="nationality">Turkish</column>
+            <column name="dial_code">+90</column>
+            <column name="iso_alpha_2">TR</column>
+            <column name="iso_alpha_3">TUR</column>
+        </table>
+        <table name="countries">
+            <column name="id">226</column>
+            <column name="country_name">Turkmenistan</column>
+            <column name="nationality">Turkmen</column>
+            <column name="dial_code">+993</column>
+            <column name="iso_alpha_2">TM</column>
+            <column name="iso_alpha_3">TKM</column>
+        </table>
+        <table name="countries">
+            <column name="id">227</column>
+            <column name="country_name">Turks And Caicos Islands</column>
+            <column name="nationality">Turks And Caicos Islander</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">TC</column>
+            <column name="iso_alpha_3">TCA</column>
+        </table>
+        <table name="countries">
+            <column name="id">228</column>
+            <column name="country_name">Tuvalu</column>
+            <column name="nationality">Tuvaluan</column>
+            <column name="dial_code">+688</column>
+            <column name="iso_alpha_2">TV</column>
+            <column name="iso_alpha_3">TUV</column>
+        </table>
+        <table name="countries">
+            <column name="id">229</column>
+            <column name="country_name">Uganda</column>
+            <column name="nationality">Ugandan</column>
+            <column name="dial_code">+256</column>
+            <column name="iso_alpha_2">UG</column>
+            <column name="iso_alpha_3">UGA</column>
+        </table>
+        <table name="countries">
+            <column name="id">230</column>
+            <column name="country_name">Ukraine</column>
+            <column name="nationality">Ukrainian</column>
+            <column name="dial_code">+380</column>
+            <column name="iso_alpha_2">UA</column>
+            <column name="iso_alpha_3">UKR</column>
+        </table>
+        <table name="countries">
+            <column name="id">231</column>
+            <column name="country_name">United Arab Emirates</column>
+            <column name="nationality">Emirati</column>
+            <column name="dial_code">+971</column>
+            <column name="iso_alpha_2">AE</column>
+            <column name="iso_alpha_3">ARE</column>
+        </table>
+        <table name="countries">
+            <column name="id">232</column>
+            <column name="country_name">United Kingdom</column>
+            <column name="nationality">British</column>
+            <column name="dial_code">+44</column>
+            <column name="iso_alpha_2">GB</column>
+            <column name="iso_alpha_3">GBR</column>
+        </table>
+        <table name="countries">
+            <column name="id">233</column>
+            <column name="country_name">United States</column>
+            <column name="nationality">American</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">US</column>
+            <column name="iso_alpha_3">USA</column>
+        </table>
+        <table name="countries">
+            <column name="id">234</column>
+            <column name="country_name">Uruguay</column>
+            <column name="nationality">Uruguayan</column>
+            <column name="dial_code">+598</column>
+            <column name="iso_alpha_2">UY</column>
+            <column name="iso_alpha_3">URY</column>
+        </table>
+        <table name="countries">
+            <column name="id">235</column>
+            <column name="country_name">Uzbekistan</column>
+            <column name="nationality">Uzbekistani</column>
+            <column name="dial_code">+998</column>
+            <column name="iso_alpha_2">UZ</column>
+            <column name="iso_alpha_3">UZB</column>
+        </table>
+        <table name="countries">
+            <column name="id">236</column>
+            <column name="country_name">Vanuatu</column>
+            <column name="nationality">Vanuatu</column>
+            <column name="dial_code">+678</column>
+            <column name="iso_alpha_2">VU</column>
+            <column name="iso_alpha_3">VUT</column>
+        </table>
+        <table name="countries">
+            <column name="id">237</column>
+            <column name="country_name">Vatican City (Holy See)</column>
+            <column name="nationality">Vatican Citizen</column>
+            <column name="dial_code">+379</column>
+            <column name="iso_alpha_2">VA</column>
+            <column name="iso_alpha_3">VAT</column>
+        </table>
+        <table name="countries">
+            <column name="id">238</column>
+            <column name="country_name">Venezuela</column>
+            <column name="nationality">Venezuelan</column>
+            <column name="dial_code">+58</column>
+            <column name="iso_alpha_2">VE</column>
+            <column name="iso_alpha_3">VEN</column>
+        </table>
+        <table name="countries">
+            <column name="id">239</column>
+            <column name="country_name">Vietnam</column>
+            <column name="nationality">Vietnamese</column>
+            <column name="dial_code">+84</column>
+            <column name="iso_alpha_2">VN</column>
+            <column name="iso_alpha_3">VNM</column>
+        </table>
+        <table name="countries">
+            <column name="id">240</column>
+            <column name="country_name">Virgin Islands, U.S.</column>
+            <column name="nationality">U.S Virgin Islander</column>
+            <column name="dial_code">+1</column>
+            <column name="iso_alpha_2">VI</column>
+            <column name="iso_alpha_3">VIR</column>
+        </table>
+        <table name="countries">
+            <column name="id">241</column>
+            <column name="country_name">Wallis And Futuna</column>
+            <column name="nationality">Welsh</column>
+            <column name="dial_code">+681</column>
+            <column name="iso_alpha_2">WF</column>
+            <column name="iso_alpha_3">WLF</column>
+        </table>
+        <table name="countries">
+            <column name="id">242</column>
+            <column name="country_name">Western Sahara</column>
+            <column name="nationality">Western Saharan</column>
+            <column name="dial_code">+212</column>
+            <column name="iso_alpha_2">EH</column>
+            <column name="iso_alpha_3">ESH</column>
+        </table>
+        <table name="countries">
+            <column name="id">243</column>
+            <column name="country_name">Yemen</column>
+            <column name="nationality">Yemenite</column>
+            <column name="dial_code">+967</column>
+            <column name="iso_alpha_2">YE</column>
+            <column name="iso_alpha_3">YEM</column>
+        </table>
+        <table name="countries">
+            <column name="id">244</column>
+            <column name="country_name">Zambia</column>
+            <column name="nationality">Zambian</column>
+            <column name="dial_code">+260</column>
+            <column name="iso_alpha_2">ZM</column>
+            <column name="iso_alpha_3">ZMB</column>
+        </table>
+        <table name="countries">
+            <column name="id">245</column>
+            <column name="country_name">Zimbabwe</column>
+            <column name="nationality">Zimbabwean</column>
+            <column name="dial_code">+263</column>
+            <column name="iso_alpha_2">ZW</column>
+            <column name="iso_alpha_3">ZWE</column>
+        </table>
+    </database>
+</pma_xml_export>

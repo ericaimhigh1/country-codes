@@ -1,0 +1,282 @@
+% phpMyAdmin LaTeX Dump
+% version 5.2.1
+% https://www.phpmyadmin.net/
+%
+% Host: 127.0.0.1
+% Generation Time: Sep 13, 2023 at 07:47 PM
+% Server version: 10.4.28-MariaDB
+% PHP Version: 8.2.4
+% 
+% 
+% 
+
+%
+% Structure: countries
+%
+ \begin{longtable}{|l|c|c|c|l|l|l|} 
+ \caption{Structure of table countries} \label{tab:countries-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Column}} & \multicolumn{1}{|c|}{\textbf{Type}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{Default}} & \multicolumn{1}{|c|}{\textbf{Links to}} & \multicolumn{1}{|c|}{\textbf{Comments}} & \multicolumn{1}{|c|}{\textbf{MIME}} \\ \hline \hline
+\endfirsthead
+ \caption{Structure of table countries (continued)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Column}} & \multicolumn{1}{|c|}{\textbf{Type}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{Default}} & \multicolumn{1}{|c|}{\textbf{Links to}} & \multicolumn{1}{|c|}{\textbf{Comments}} & \multicolumn{1}{|c|}{\textbf{MIME}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{id}} & int(11) & No &  &  &  &  \\ \hline 
+country\_name & varchar(50) & No &  &  &  &  \\ \hline 
+nationality & varchar(50) & No &  &  &  &  \\ \hline 
+dial\_code & varchar(10) & No &  &  &  &  \\ \hline 
+iso\_alpha\_2 & varchar(11) & No &  &  &  &  \\ \hline 
+iso\_alpha\_3 & varchar(11) & No &  &  &  &  \\ \hline 
+ \end{longtable}
+
+%
+% Data: countries
+%
+ \begin{longtable}{|l|l|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Content of table countries} \label{tab:countries-data} \\\hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{country\_name}} & \multicolumn{1}{|c|}{\textbf{nationality}} & \multicolumn{1}{|c|}{\textbf{dial\_code}} & \multicolumn{1}{|c|}{\textbf{iso\_alpha\_2}} & \multicolumn{1}{|c|}{\textbf{iso\_alpha\_3}} \\ \hline \hline  \endfirsthead 
+\caption{Content of table countries (continued)} \\ \hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{country\_name}} & \multicolumn{1}{|c|}{\textbf{nationality}} & \multicolumn{1}{|c|}{\textbf{dial\_code}} & \multicolumn{1}{|c|}{\textbf{iso\_alpha\_2}} & \multicolumn{1}{|c|}{\textbf{iso\_alpha\_3}} \\ \hline \hline \endhead \endfoot
+1 & Afghanistan & Afghan & +93 & AF & AFG \\ \hline 
+2 & Aland Islands & Aland Islands & +358 & AX & ALA \\ \hline 
+3 & Albania & Albanian & +355 & AL & ALB \\ \hline 
+4 & Algeria & Algerian & +213 & DZ & DZA \\ \hline 
+5 & American Samoa & American Saoma & +1 & AS & ASM \\ \hline 
+6 & Andorra & Andorran & +376 & AD & AND \\ \hline 
+7 & Angola & Angolan & +244 & AO & AGO \\ \hline 
+8 & Anguilla & Anguillan & +1 & AI & AIA \\ \hline 
+9 & Antarctica & Antarctican & +672 & AQ & ATA \\ \hline 
+10 & Antigua And Barbuda & Antiguans & +1 & AG & ATG \\ \hline 
+11 & Argentina & Argentinean & +54 & AR & ARG \\ \hline 
+12 & Armenia & Armenian & +374 & AM & ARM \\ \hline 
+13 & Aruba & Aruba & +297 & AW & ABW \\ \hline 
+14 & Australia & Australian & +61 & AU & AUS \\ \hline 
+15 & Austria & Austrian & +43 & AT & AUT \\ \hline 
+16 & Azerbaijan & Azerbaijani & +994 & AZ & AZE \\ \hline 
+17 & Bahamas & Bahamian & +1 & BS & BHS \\ \hline 
+18 & Bahrain & Bahraini & +973 & BH & BHR \\ \hline 
+19 & Bangladesh & Bangladeshi & +880 & BD & BGD \\ \hline 
+20 & Barbados & Barbudans & +1 & BB & BRB \\ \hline 
+21 & Belarus & Belarusian & +375 & BY & BLR \\ \hline 
+22 & Belgium & Belgian & +32 & BE & BEL \\ \hline 
+23 & Belize & Belizean & +501 & BZ & BLZ \\ \hline 
+24 & Benin & Beninese & +229 & BJ & BEN \\ \hline 
+25 & Bermuda & Bermudan & +1 & BM & BMU \\ \hline 
+26 & Bhutan & Bhutanese & +975 & BT & BTN \\ \hline 
+27 & Bolivia & Bolivian & +591 & BO & BOL \\ \hline 
+28 & Bosnia And Herzegovina & Bosnian & +387 & BA & BIH \\ \hline 
+29 & Botswana & Botswananian & +267 & BW & BWA \\ \hline 
+30 & Bouvet Island & Bouvet Island & +47 & BV & BVT \\ \hline 
+31 & Brazil & Brazilian & +55 & BR & BRA \\ \hline 
+32 & British Indian Ocean Territory & British Indian Ocean Territory & +246 & IO & IOT \\ \hline 
+33 & Virgin Islands, British & Virgin Islands, British & +1 & VG & VGB \\ \hline 
+34 & Brunei Darussalam & Bruneian & +673 & BN & BRN \\ \hline 
+35 & Bulgaria & Bulgarian & +359 & BG & BGR \\ \hline 
+36 & Burkina Faso & Burkinabe & +226 & BF & BFA \\ \hline 
+37 & Burundi & Burundian & +257 & BI & BDI \\ \hline 
+38 & Cambodia & Cambodian & +855 & KH & KHM \\ \hline 
+39 & Cameroon & Cameroonian & +237 & CM & CMR \\ \hline 
+40 & Canada & Canadian & +1 & CA & CAN \\ \hline 
+41 & Cape Verde & Cape Verdean & +238 & CV & CPV \\ \hline 
+42 & Cayman Islands & Cayman Islands & +1 & KY & CYM \\ \hline 
+43 & Central African Republic & Central African & +236 & CF & CAF \\ \hline 
+44 & Chad & Chadian & +235 & TD & TCD \\ \hline 
+45 & Chile & Chilean & +56 & CL & CHL \\ \hline 
+46 & China & Chinese & +86 & CN & CHN \\ \hline 
+47 & Christmas Island & Christmas Island & +61 & CX & CXR \\ \hline 
+48 & Cocos (Keeling) Islands & Cocos (Keeling) Islands & +61 & CC & CCK \\ \hline 
+49 & Colombia & Colombian & +57 & CO & COL \\ \hline 
+50 & Comoros & Comoran & +269 & KM & COM \\ \hline 
+51 & Congo & Congolese & +242 & CG & COG \\ \hline 
+52 & Cook Island & Cook Islander & +682 & CK & COK \\ \hline 
+53 & Costa Rica & Costa Rican & +506 & CR & CRI \\ \hline 
+54 & Cote D'Ivoire & Cote D'Ivoires & +225 & CI & CIV \\ \hline 
+55 & Croatia & Croatian & +385 & HR & HRV \\ \hline 
+56 & Cuba & Cuban & +53 & CU & CUB \\ \hline 
+57 & Curacao & **** & +599 & CW & CUW \\ \hline 
+58 & Cyprus & Cypriot & +357 & CY & CYP \\ \hline 
+59 & Czech Republic & Czech & +420 & CZ & CZE \\ \hline 
+60 & Democratic Republic of Congo & Congolese & +243 & CD & COD \\ \hline 
+61 & Denmark & Danish & +45 & DK & DNK \\ \hline 
+62 & Djibouti & Djibouti & +253 & DJ & DJI \\ \hline 
+63 & Dominica & Dominican & +1 & DM & DMA \\ \hline 
+64 & Dominican Republic & Dominican Republic & +1 & DO & DOM \\ \hline 
+65 & Ecuador & Ecuadorean & +593 & EC & ECU \\ \hline 
+66 & Egypt & Egyptian & +20 & EG & EGY \\ \hline 
+67 & El Salvador & El Salvadorian & +503 & SV & SLV \\ \hline 
+68 & Equatorial Guinea & Equatorial Guinean & +240 & GQ & GNQ \\ \hline 
+69 & Eritrea & Eritrean & +291 & ER & ERI \\ \hline 
+70 & Estonia & Estonian & +372 & EE & EST \\ \hline 
+71 & Ethiopia & Ethiopian & +251 & ET & ETH \\ \hline 
+72 & Falkland Islands (Malvinas) & Falkland Islands (Malvinas) & +500 & FK & FLK \\ \hline 
+73 & Faroe Islands & Faroe Islands & +298 & FO & FRO \\ \hline 
+74 & Fiji & Fijian & +679 & FJ & FJI \\ \hline 
+75 & Finland & Finnish & +358 & FI & FIN \\ \hline 
+76 & France & French & +33 & FR & FRA \\ \hline 
+77 & French Guiana & French Guianese & +594 & GF & GUF \\ \hline 
+78 & French Polynesia & French Polynesia & +689 & PF & PYF \\ \hline 
+79 & Gabon & Gabonese & +241 & GA & GAB \\ \hline 
+80 & Gambia & Gambian & +220 & GM & GMB \\ \hline 
+81 & Georgia & Georgian & +995 & GE & GEO \\ \hline 
+82 & Germany & German & +49 & DE & DEU \\ \hline 
+83 & Ghana & Ghanaian & +233 & GH & GHA \\ \hline 
+84 & Gibraltar & Gibraltarian & +350 & GI & GIB \\ \hline 
+85 & Greece & Greek & +30 & GR & GRC \\ \hline 
+86 & Greenland & Greenlandian & +299 & GL & GRL \\ \hline 
+87 & Grenada & Grenadian & +1 & GD & GRD \\ \hline 
+88 & Guadeloupe & Guadeloupe & +590 & GP & GLP \\ \hline 
+89 & Guam & Guamian & +1 & GU & GUM \\ \hline 
+90 & Guatemala & Guatemalan & +502 & GT & GTM \\ \hline 
+91 & Guernsey & Guerns & +44 & GG & GGY \\ \hline 
+92 & Guinea & Guinean & +224 & GN & GIN \\ \hline 
+93 & Guinea-Bissau & Bissau-Guinean & +245 & GW & GNB \\ \hline 
+94 & Guyana & Guyanese & +592 & GY & GUY \\ \hline 
+95 & Haiti & Haitian & +509 & HT & HTI \\ \hline 
+96 & Honduras & Honduran & +504 & HN & HND \\ \hline 
+97 & Hong Kong & Hong Kong (Chinese) & +852 & HK & HKG \\ \hline 
+98 & Hungary & Hungarian & +36 & HU & HUN \\ \hline 
+99 & Iceland & Icelander & +354 & IS & ISL \\ \hline 
+100 & India & Indian & +91 & IN & IND \\ \hline 
+101 & Indonesia & Indonesian & +62 & ID & IDN \\ \hline 
+102 & Iran & Iranian & +98 & IR & IRN \\ \hline 
+103 & Iraq & Iraqi & +964 & IQ & IRQ \\ \hline 
+104 & Ireland & Irish & +353 & IE & IRL \\ \hline 
+105 & Isle Of Man & Isle Of Man & +44 & IM & IMN \\ \hline 
+106 & Israel & Israeli & +972 & IL & ISR \\ \hline 
+107 & Italy & Italian & +39 & IT & ITA \\ \hline 
+108 & Jamaica & Jamaican & +1 & JM & JAM \\ \hline 
+109 & Japan & Japanese & +81 & JP & JPN \\ \hline 
+110 & Jersey & Jersey & +44 & JE & JEY \\ \hline 
+111 & Jordan & Jordanian & +962 & JO & JOR \\ \hline 
+112 & Kazakhstan & Kazakhstani & +7 & KZ & KAZ \\ \hline 
+113 & Kenya & Kenyan & +254 & KE & KEN \\ \hline 
+114 & Kiribati & Kiribatin & +686 & KI & KIR \\ \hline 
+115 & Kosovo & Kosovar & +383 & XK & XXK \\ \hline 
+116 & Korea South & Korean (South) & +82 & KR & KOR \\ \hline 
+117 & Korea North & Korean (North) & +850 & KP & PRK \\ \hline 
+118 & Kuwait & Kuwaiti & +965 & KW & KWT \\ \hline 
+119 & Kyrgyzstan & Kyrgyz & +996 & KG & KGZ \\ \hline 
+120 & Lao People's Democratic Republic & Laotians & +856 & LA & LAO \\ \hline 
+121 & Latvia & Latvian & +371 & LV & LVA \\ \hline 
+122 & Lebanon & Lebanese & +961 & LB & LBN \\ \hline 
+123 & Lesotho & Lesothon & +266 & LS & LSO \\ \hline 
+124 & Liberia & Liberian & +231 & LR & LBR \\ \hline 
+125 & Libya & Libyan & +218 & LY & LBY \\ \hline 
+126 & Liechtenstein & Liechtensteiner & +423 & LI & LIE \\ \hline 
+127 & Lithuania & Lithuanian & +370 & LT & LTU \\ \hline 
+128 & Luxembourg & Luxembourger & +352 & LU & LUX \\ \hline 
+129 & Macao & Macedonianv & +853 & MO & MAC \\ \hline 
+130 & Macedonia & Macedonian & +389 & MK & MKD \\ \hline 
+131 & Madagascar & Madagascarian & +261 & MG & MDG \\ \hline 
+132 & Malawi & Malawian & +265 & MW & MWI \\ \hline 
+133 & Malaysia & Malaysian & +60 & MY & MYS \\ \hline 
+134 & Maldives & Maldivan & +960 & MV & MDV \\ \hline 
+135 & Mali & Malian & +223 & ML & MLI \\ \hline 
+136 & Malta & Maltese & +356 & MT & MLT \\ \hline 
+137 & Marshall Islands & Marshallese & +692 & MH & MHL \\ \hline 
+138 & Martinique & Martinicans & +596 & MQ & MTG \\ \hline 
+139 & Mauritania & Mauritian & +222 & MR & MRT \\ \hline 
+140 & Mauritius & Mauritiusian & +230 & MU & MUS \\ \hline 
+141 & Mayotte & Mayottes & +262 & YT & MYT \\ \hline 
+142 & Mexico & Mexican & +52 & MX & MEX \\ \hline 
+143 & Micronesia & Micronesians & +691 & FM & FSM \\ \hline 
+144 & Moldova & Moldovan & +373 & MD & MDA \\ \hline 
+145 & Monaco & Monacan & +377 & MC & MCO \\ \hline 
+146 & Mongolia & Mongolian & +976 & MN & MNG \\ \hline 
+147 & Montenegro & Montenegrin & +382 & ME & MNE \\ \hline 
+148 & Montserrat & Montserratan & +1 & MS & MSR \\ \hline 
+149 & Morocco & Moroccan & +212 & MA & MAR \\ \hline 
+150 & Mozambique & Mozambican & +258 & MZ & MOZ \\ \hline 
+151 & Myanmar & Myanmarian & +95 & MM & MMR \\ \hline 
+152 & Namibia & Namibian & +264 & NA & NAM \\ \hline 
+153 & Nauru & Nauruan & +264 & NR & NRU \\ \hline 
+154 & Nepal & Nepalese & +977 & NP & NPL \\ \hline 
+155 & Netherlands & Dutch & +31 & NL & NDL \\ \hline 
+156 & Netherlands Antilles & Netherlands Antilles & +599 & AN & ANT \\ \hline 
+157 & New Caledonia & Caledonian & +687 & NC & NCL \\ \hline 
+158 & New Zealand & New Zealander & +64 & NZ & NZL \\ \hline 
+159 & Nicaragua & Nicaraguan & +505 & NI & NIC \\ \hline 
+160 & Niger & Nigerien & +227 & NE & NER \\ \hline 
+161 & Nigeria & Nigerian & +234 & NG & NGA \\ \hline 
+162 & Niue & Niue & +683 & NU & NIU \\ \hline 
+163 & Norfolk Island & Norfolk Islander & +672 & NF & NFK \\ \hline 
+164 & Northern Mariana Islands & Northern Mariana Islander & +1 & MP & MNP \\ \hline 
+165 & Norway & Norwegian & +47 & NO & NOR \\ \hline 
+166 & Oman & Omani & +968 & OM & OMN \\ \hline 
+167 & Pakistan & Pakistani & +92 & PK & PAK \\ \hline 
+168 & Palau & Palauan & +680 & PW & PLW \\ \hline 
+169 & Palestine & Palestinian & +970 & PS & PSE \\ \hline 
+170 & Panama & Panamanian & +507 & PA & PAN \\ \hline 
+171 & Papua New Guinea & Papua New Guinean & +675 & PG & PNG \\ \hline 
+172 & Paraguay & Paraguayan & +595 & PY & PRY \\ \hline 
+173 & Peru & Peruvian & +51 & PE & PER \\ \hline 
+174 & Philippines & Philippine & +63 & PH & PHL \\ \hline 
+175 & Pitcairn & Pitcairn & +64 & PN & PCN \\ \hline 
+176 & Poland & Polish & +48 & PL & POL \\ \hline 
+177 & Portugal & Portuguese & +351 & PT & PRT \\ \hline 
+178 & Puerto Rico & Puerto Rican & +1 & PR & PRI \\ \hline 
+179 & Qatar & Qatari & +974 & QA & QAT \\ \hline 
+180 & Reunion & Reunion & +262 & RE & REU \\ \hline 
+181 & Romania & Romanian & +40 & RO & ROU \\ \hline 
+182 & Russian Federation & Russian & +7 & RU & RUS \\ \hline 
+183 & Rwanda & Rwandan & +250 & RW & RWA \\ \hline 
+184 & Saint Barthelemy & Saint Barthélemois & +590 & BL & BLM \\ \hline 
+185 & Saint Helena & Saint Helenians & +290 & SH & SHN \\ \hline 
+186 & Saint Kitts And Nevis & Kittitian/Nevisian & +1 & KN & KNA \\ \hline 
+187 & Saint Lucia & Saint Lucian & +1 & LC & LCA \\ \hline 
+188 & Saint Martin & Saint Martiner & +590 & MF & MAF \\ \hline 
+189 & Saint Pierre And Miquelon & Saint-Pierrais/Miquelonnais & +508 & PM & PSM \\ \hline 
+190 & Saint Vincent And Grenadines & Vincentians & +1 & VC & VCT \\ \hline 
+191 & Samoa & Samoan & +685 & WS & WSM \\ \hline 
+192 & San Marino & San Marinese & +378 & SM & SMR \\ \hline 
+193 & Sao Tome And Principe & Sao Tomean & +239 & ST & STP \\ \hline 
+194 & Saudi Arabia & Saudi & +996 & SA & SAU \\ \hline 
+195 & Senegal & Senegalese & +221 & SN & SEN \\ \hline 
+196 & Serbia & Serbian & +381 & RS & SRB \\ \hline 
+197 & Seychelles & Seychellois & +248 & SC & SYC \\ \hline 
+198 & Sierra Leone & Sierra Leonean & +232 & SL & SLE \\ \hline 
+199 & Sint Maarten & Sint Maartener & +1 & SX & SXM \\ \hline 
+200 & Slovakia & Slovakian & +421 & SK & SVK \\ \hline 
+201 & Slovenia & Slovenian & +386 & SI & SVN \\ \hline 
+202 & Solomon Islands & Solomon Islander & +677 & SB & SLB \\ \hline 
+203 & Somalia & Somali & +252 & SO & SOM \\ \hline 
+204 & South Africa & South African & +27 & ZA & ZAF \\ \hline 
+205 & South Sudan & South Sudanese & +211 & SS & SSD \\ \hline 
+206 & Spain & Spanish & +34 & ES & ESP \\ \hline 
+207 & Sri Lanka & Sri Lankan & +94 & LK & LKA \\ \hline 
+208 & Sudan & Sudanese & +249 & SD & SDN \\ \hline 
+209 & Suriname & Surinamese & +597 & SR & SUR \\ \hline 
+210 & Svalbard And Jan Mayen & Svalbard And Jan Mayen & +47 & SJ & SJM \\ \hline 
+211 & Swaziland & Swazi & +268 & SZ & SWZ \\ \hline 
+212 & Sweden & Swedish & +46 & SE & SWE \\ \hline 
+213 & Switzerland & Swiss & +41 & CH & CHE \\ \hline 
+214 & Syria & Syrian & +963 & SY & SYR \\ \hline 
+215 & Taiwan & Taiwanese & +886 & TW & TWN \\ \hline 
+216 & Tajikistan & Tajik & +992 & TJ & TJK \\ \hline 
+217 & Tanzania & Tanzanian & +255 & TZ & TZA \\ \hline 
+218 & Thailand & Thai & +66 & TH & THA \\ \hline 
+219 & Timor-Leste & Timorese & +670 & TL & TLS \\ \hline 
+220 & Togo & Togolese & +228 & TG & TGO \\ \hline 
+221 & Tokelau & Tokelau & +690 & TK & TKL \\ \hline 
+222 & Tonga & Tongan & +676 & TO & TON \\ \hline 
+223 & Trinidad And Tobago & Trinidadian/Tobagonian & +1 & TT & TTO \\ \hline 
+224 & Tunisia & Tunisian & +216 & TN & TUN \\ \hline 
+225 & Turkey & Turkish & +90 & TR & TUR \\ \hline 
+226 & Turkmenistan & Turkmen & +993 & TM & TKM \\ \hline 
+227 & Turks And Caicos Islands & Turks And Caicos Islander & +1 & TC & TCA \\ \hline 
+228 & Tuvalu & Tuvaluan & +688 & TV & TUV \\ \hline 
+229 & Uganda & Ugandan & +256 & UG & UGA \\ \hline 
+230 & Ukraine & Ukrainian & +380 & UA & UKR \\ \hline 
+231 & United Arab Emirates & Emirati & +971 & AE & ARE \\ \hline 
+232 & United Kingdom & British & +44 & GB & GBR \\ \hline 
+233 & United States & American & +1 & US & USA \\ \hline 
+234 & Uruguay & Uruguayan & +598 & UY & URY \\ \hline 
+235 & Uzbekistan & Uzbekistani & +998 & UZ & UZB \\ \hline 
+236 & Vanuatu & Vanuatu & +678 & VU & VUT \\ \hline 
+237 & Vatican City (Holy See) & Vatican Citizen & +379 & VA & VAT \\ \hline 
+238 & Venezuela & Venezuelan & +58 & VE & VEN \\ \hline 
+239 & Vietnam & Vietnamese & +84 & VN & VNM \\ \hline 
+240 & Virgin Islands, U.S. & U.S Virgin Islander & +1 & VI & VIR \\ \hline 
+241 & Wallis And Futuna & Welsh & +681 & WF & WLF \\ \hline 
+242 & Western Sahara & Western Saharan & +212 & EH & ESH \\ \hline 
+243 & Yemen & Yemenite & +967 & YE & YEM \\ \hline 
+244 & Zambia & Zambian & +260 & ZM & ZMB \\ \hline 
+245 & Zimbabwe & Zimbabwean & +263 & ZW & ZWE \\ \hline 
+ \end{longtable}

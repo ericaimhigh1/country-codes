@@ -1,0 +1,313 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Sep 13, 2023 at 07:47 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `dbname`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `countries`
+--
+
+CREATE TABLE `countries` (
+  `id` int(11) NOT NULL,
+  `country_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `nationality` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `dial_code` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `iso_alpha_2` varchar(11) NOT NULL,
+  `iso_alpha_3` varchar(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `countries`
+--
+
+INSERT INTO `countries` (`id`, `country_name`, `nationality`, `dial_code`, `iso_alpha_2`, `iso_alpha_3`) VALUES
+(1, 'Afghanistan', 'Afghan', '+93', 'AF', 'AFG'),
+(2, 'Aland Islands', 'Aland Islands', '+358', 'AX', 'ALA'),
+(3, 'Albania', 'Albanian', '+355', 'AL', 'ALB'),
+(4, 'Algeria', 'Algerian', '+213', 'DZ', 'DZA'),
+(5, 'American Samoa', 'American Saoma', '+1', 'AS', 'ASM'),
+(6, 'Andorra', 'Andorran', '+376', 'AD', 'AND'),
+(7, 'Angola', 'Angolan', '+244', 'AO', 'AGO'),
+(8, 'Anguilla', 'Anguillan', '+1', 'AI', 'AIA'),
+(9, 'Antarctica', 'Antarctican', '+672', 'AQ', 'ATA'),
+(10, 'Antigua And Barbuda', 'Antiguans', '+1', 'AG', 'ATG'),
+(11, 'Argentina', 'Argentinean', '+54', 'AR', 'ARG'),
+(12, 'Armenia', 'Armenian', '+374', 'AM', 'ARM'),
+(13, 'Aruba', 'Aruba', '+297', 'AW', 'ABW'),
+(14, 'Australia', 'Australian', '+61', 'AU', 'AUS'),
+(15, 'Austria', 'Austrian', '+43', 'AT', 'AUT'),
+(16, 'Azerbaijan', 'Azerbaijani', '+994', 'AZ', 'AZE'),
+(17, 'Bahamas', 'Bahamian', '+1', 'BS', 'BHS'),
+(18, 'Bahrain', 'Bahraini', '+973', 'BH', 'BHR'),
+(19, 'Bangladesh', 'Bangladeshi', '+880', 'BD', 'BGD'),
+(20, 'Barbados', 'Barbudans', '+1', 'BB', 'BRB'),
+(21, 'Belarus', 'Belarusian', '+375', 'BY', 'BLR'),
+(22, 'Belgium', 'Belgian', '+32', 'BE', 'BEL'),
+(23, 'Belize', 'Belizean', '+501', 'BZ', 'BLZ'),
+(24, 'Benin', 'Beninese', '+229', 'BJ', 'BEN'),
+(25, 'Bermuda', 'Bermudan', '+1', 'BM', 'BMU'),
+(26, 'Bhutan', 'Bhutanese', '+975', 'BT', 'BTN'),
+(27, 'Bolivia', 'Bolivian', '+591', 'BO', 'BOL'),
+(28, 'Bosnia And Herzegovina', 'Bosnian', '+387', 'BA', 'BIH'),
+(29, 'Botswana', 'Botswananian', '+267', 'BW', 'BWA'),
+(30, 'Bouvet Island', 'Bouvet Island', '+47', 'BV', 'BVT'),
+(31, 'Brazil', 'Brazilian', '+55', 'BR', 'BRA'),
+(32, 'British Indian Ocean Territory', 'British Indian Ocean Territory', '+246', 'IO', 'IOT'),
+(33, 'Virgin Islands, British', 'Virgin Islands, British', '+1', 'VG', 'VGB'),
+(34, 'Brunei Darussalam', 'Bruneian', '+673', 'BN', 'BRN'),
+(35, 'Bulgaria', 'Bulgarian', '+359', 'BG', 'BGR'),
+(36, 'Burkina Faso', 'Burkinabe', '+226', 'BF', 'BFA'),
+(37, 'Burundi', 'Burundian', '+257', 'BI', 'BDI'),
+(38, 'Cambodia', 'Cambodian', '+855', 'KH', 'KHM'),
+(39, 'Cameroon', 'Cameroonian', '+237', 'CM', 'CMR'),
+(40, 'Canada', 'Canadian', '+1', 'CA', 'CAN'),
+(41, 'Cape Verde', 'Cape Verdean', '+238', 'CV', 'CPV'),
+(42, 'Cayman Islands', 'Cayman Islands', '+1', 'KY', 'CYM'),
+(43, 'Central African Republic', 'Central African', '+236', 'CF', 'CAF'),
+(44, 'Chad', 'Chadian', '+235', 'TD', 'TCD'),
+(45, 'Chile', 'Chilean', '+56', 'CL', 'CHL'),
+(46, 'China', 'Chinese', '+86', 'CN', 'CHN'),
+(47, 'Christmas Island', 'Christmas Island', '+61', 'CX', 'CXR'),
+(48, 'Cocos (Keeling) Islands', 'Cocos (Keeling) Islands', '+61', 'CC', 'CCK'),
+(49, 'Colombia', 'Colombian', '+57', 'CO', 'COL'),
+(50, 'Comoros', 'Comoran', '+269', 'KM', 'COM'),
+(51, 'Congo', 'Congolese', '+242', 'CG', 'COG'),
+(52, 'Cook Island', 'Cook Islander', '+682', 'CK', 'COK'),
+(53, 'Costa Rica', 'Costa Rican', '+506', 'CR', 'CRI'),
+(54, "Cote D\'Ivoire", "Cote D\'Ivoires", '+225', 'CI', 'CIV'),
+(55, 'Croatia', 'Croatian', '+385', 'HR', 'HRV'),
+(56, 'Cuba', 'Cuban', '+53', 'CU', 'CUB'),
+(57, 'Curacao', '****', '+599', 'CW', 'CUW'),
+(58, 'Cyprus', 'Cypriot', '+357', 'CY', 'CYP'),
+(59, 'Czech Republic', 'Czech', '+420', 'CZ', 'CZE'),
+(60, 'Democratic Republic of Congo', 'Congolese', '+243', 'CD', 'COD'),
+(61, 'Denmark', 'Danish', '+45', 'DK', 'DNK'),
+(62, 'Djibouti', 'Djibouti', '+253', 'DJ', 'DJI'),
+(63, 'Dominica', 'Dominican', '+1', 'DM', 'DMA'),
+(64, 'Dominican Republic', 'Dominican Republic', '+1', 'DO', 'DOM'),
+(65, 'Ecuador', 'Ecuadorean', '+593', 'EC', 'ECU'),
+(66, 'Egypt', 'Egyptian', '+20', 'EG', 'EGY'),
+(67, 'El Salvador', 'El Salvadorian', '+503', 'SV', 'SLV'),
+(68, 'Equatorial Guinea', 'Equatorial Guinean', '+240', 'GQ', 'GNQ'),
+(69, 'Eritrea', 'Eritrean', '+291', 'ER', 'ERI'),
+(70, 'Estonia', 'Estonian', '+372', 'EE', 'EST'),
+(71, 'Ethiopia', 'Ethiopian', '+251', 'ET', 'ETH'),
+(72, 'Falkland Islands (Malvinas)', 'Falkland Islands (Malvinas)', '+500', 'FK', 'FLK'),
+(73, 'Faroe Islands', 'Faroe Islands', '+298', 'FO', 'FRO'),
+(74, 'Fiji', 'Fijian', '+679', 'FJ', 'FJI'),
+(75, 'Finland', 'Finnish', '+358', 'FI', 'FIN'),
+(76, 'France', 'French', '+33', 'FR', 'FRA'),
+(77, 'French Guiana', 'French Guianese', '+594', 'GF', 'GUF'),
+(78, 'French Polynesia', 'French Polynesia', '+689', 'PF', 'PYF'),
+(79, 'Gabon', 'Gabonese', '+241', 'GA', 'GAB'),
+(80, 'Gambia', 'Gambian', '+220', 'GM', 'GMB'),
+(81, 'Georgia', 'Georgian', '+995', 'GE', 'GEO'),
+(82, 'Germany', 'German', '+49', 'DE', 'DEU'),
+(83, 'Ghana', 'Ghanaian', '+233', 'GH', 'GHA'),
+(84, 'Gibraltar', 'Gibraltarian', '+350', 'GI', 'GIB'),
+(85, 'Greece', 'Greek', '+30', 'GR', 'GRC'),
+(86, 'Greenland', 'Greenlandian', '+299', 'GL', 'GRL'),
+(87, 'Grenada', 'Grenadian', '+1', 'GD', 'GRD'),
+(88, 'Guadeloupe', 'Guadeloupe', '+590', 'GP', 'GLP'),
+(89, 'Guam', 'Guamian', '+1', 'GU', 'GUM'),
+(90, 'Guatemala', 'Guatemalan', '+502', 'GT', 'GTM'),
+(91, 'Guernsey', 'Guerns', '+44', 'GG', 'GGY'),
+(92, 'Guinea', 'Guinean', '+224', 'GN', 'GIN'),
+(93, 'Guinea-Bissau', 'Bissau-Guinean', '+245', 'GW', 'GNB'),
+(94, 'Guyana', 'Guyanese', '+592', 'GY', 'GUY'),
+(95, 'Haiti', 'Haitian', '+509', 'HT', 'HTI'),
+(96, 'Honduras', 'Honduran', '+504', 'HN', 'HND'),
+(97, 'Hong Kong', 'Hong Kong (Chinese)', '+852', 'HK', 'HKG'),
+(98, 'Hungary', 'Hungarian', '+36', 'HU', 'HUN'),
+(99, 'Iceland', 'Icelander', '+354', 'IS', 'ISL'),
+(100, 'India', 'Indian', '+91', 'IN', 'IND'),
+(101, 'Indonesia', 'Indonesian', '+62', 'ID', 'IDN'),
+(102, 'Iran', 'Iranian', '+98', 'IR', 'IRN'),
+(103, 'Iraq', 'Iraqi', '+964', 'IQ', 'IRQ'),
+(104, 'Ireland', 'Irish', '+353', 'IE', 'IRL'),
+(105, 'Isle Of Man', 'Isle Of Man', '+44', 'IM', 'IMN'),
+(106, 'Israel', 'Israeli', '+972', 'IL', 'ISR'),
+(107, 'Italy', 'Italian', '+39', 'IT', 'ITA'),
+(108, 'Jamaica', 'Jamaican', '+1', 'JM', 'JAM'),
+(109, 'Japan', 'Japanese', '+81', 'JP', 'JPN'),
+(110, 'Jersey', 'Jersey', '+44', 'JE', 'JEY'),
+(111, 'Jordan', 'Jordanian', '+962', 'JO', 'JOR'),
+(112, 'Kazakhstan', 'Kazakhstani', '+7', 'KZ', 'KAZ'),
+(113, 'Kenya', 'Kenyan', '+254', 'KE', 'KEN'),
+(114, 'Kiribati', 'Kiribatin', '+686', 'KI', 'KIR'),
+(115, 'Kosovo', 'Kosovar', '+383', 'XK', 'XXK'),
+(116, 'Korea South', 'Korean (South)', '+82', 'KR', 'KOR'),
+(117, 'Korea North', 'Korean (North)', '+850', 'KP', 'PRK'),
+(118, 'Kuwait', 'Kuwaiti', '+965', 'KW', 'KWT'),
+(119, 'Kyrgyzstan', 'Kyrgyz', '+996', 'KG', 'KGZ'),
+(120, "Lao People\'s Democratic Republic", 'Laotians', '+856', 'LA', 'LAO'),
+(121, 'Latvia', 'Latvian', '+371', 'LV', 'LVA'),
+(122, 'Lebanon', 'Lebanese', '+961', 'LB', 'LBN'),
+(123, 'Lesotho', 'Lesothon', '+266', 'LS', 'LSO'),
+(124, 'Liberia', 'Liberian', '+231', 'LR', 'LBR'),
+(125, 'Libya', 'Libyan', '+218', 'LY', 'LBY'),
+(126, 'Liechtenstein', 'Liechtensteiner', '+423', 'LI', 'LIE'),
+(127, 'Lithuania', 'Lithuanian', '+370', 'LT', 'LTU'),
+(128, 'Luxembourg', 'Luxembourger', '+352', 'LU', 'LUX'),
+(129, 'Macao', 'Macedonianv', '+853', 'MO', 'MAC'),
+(130, 'Macedonia', 'Macedonian', '+389', 'MK', 'MKD'),
+(131, 'Madagascar', 'Madagascarian', '+261', 'MG', 'MDG'),
+(132, 'Malawi', 'Malawian', '+265', 'MW', 'MWI'),
+(133, 'Malaysia', 'Malaysian', '+60', 'MY', 'MYS'),
+(134, 'Maldives', 'Maldivan', '+960', 'MV', 'MDV'),
+(135, 'Mali', 'Malian', '+223', 'ML', 'MLI'),
+(136, 'Malta', 'Maltese', '+356', 'MT', 'MLT'),
+(137, 'Marshall Islands', 'Marshallese', '+692', 'MH', 'MHL'),
+(138, 'Martinique', 'Martinicans', '+596', 'MQ', 'MTG'),
+(139, 'Mauritania', 'Mauritian', '+222', 'MR', 'MRT'),
+(140, 'Mauritius', 'Mauritiusian', '+230', 'MU', 'MUS'),
+(141, 'Mayotte', 'Mayottes', '+262', 'YT', 'MYT'),
+(142, 'Mexico', 'Mexican', '+52', 'MX', 'MEX'),
+(143, 'Micronesia', 'Micronesians', '+691', 'FM', 'FSM'),
+(144, 'Moldova', 'Moldovan', '+373', 'MD', 'MDA'),
+(145, 'Monaco', 'Monacan', '+377', 'MC', 'MCO'),
+(146, 'Mongolia', 'Mongolian', '+976', 'MN', 'MNG'),
+(147, 'Montenegro', 'Montenegrin', '+382', 'ME', 'MNE'),
+(148, 'Montserrat', 'Montserratan', '+1', 'MS', 'MSR'),
+(149, 'Morocco', 'Moroccan', '+212', 'MA', 'MAR'),
+(150, 'Mozambique', 'Mozambican', '+258', 'MZ', 'MOZ'),
+(151, 'Myanmar', 'Myanmarian', '+95', 'MM', 'MMR'),
+(152, 'Namibia', 'Namibian', '+264', 'NA', 'NAM'),
+(153, 'Nauru', 'Nauruan', '+264', 'NR', 'NRU'),
+(154, 'Nepal', 'Nepalese', '+977', 'NP', 'NPL'),
+(155, 'Netherlands', 'Dutch', '+31', 'NL', 'NDL'),
+(156, 'Netherlands Antilles', 'Netherlands Antilles', '+599', 'AN', 'ANT'),
+(157, 'New Caledonia', 'Caledonian', '+687', 'NC', 'NCL'),
+(158, 'New Zealand', 'New Zealander', '+64', 'NZ', 'NZL'),
+(159, 'Nicaragua', 'Nicaraguan', '+505', 'NI', 'NIC'),
+(160, 'Niger', 'Nigerien', '+227', 'NE', 'NER'),
+(161, 'Nigeria', 'Nigerian', '+234', 'NG', 'NGA'),
+(162, 'Niue', 'Niue', '+683', 'NU', 'NIU'),
+(163, 'Norfolk Island', 'Norfolk Islander', '+672', 'NF', 'NFK'),
+(164, 'Northern Mariana Islands', 'Northern Mariana Islander', '+1', 'MP', 'MNP'),
+(165, 'Norway', 'Norwegian', '+47', 'NO', 'NOR'),
+(166, 'Oman', 'Omani', '+968', 'OM', 'OMN'),
+(167, 'Pakistan', 'Pakistani', '+92', 'PK', 'PAK'),
+(168, 'Palau', 'Palauan', '+680', 'PW', 'PLW'),
+(169, 'Palestine', 'Palestinian', '+970', 'PS', 'PSE'),
+(170, 'Panama', 'Panamanian', '+507', 'PA', 'PAN'),
+(171, 'Papua New Guinea', 'Papua New Guinean', '+675', 'PG', 'PNG'),
+(172, 'Paraguay', 'Paraguayan', '+595', 'PY', 'PRY'),
+(173, 'Peru', 'Peruvian', '+51', 'PE', 'PER'),
+(174, 'Philippines', 'Philippine', '+63', 'PH', 'PHL'),
+(175, 'Pitcairn', 'Pitcairn', '+64', 'PN', 'PCN'),
+(176, 'Poland', 'Polish', '+48', 'PL', 'POL'),
+(177, 'Portugal', 'Portuguese', '+351', 'PT', 'PRT'),
+(178, 'Puerto Rico', 'Puerto Rican', '+1', 'PR', 'PRI'),
+(179, 'Qatar', 'Qatari', '+974', 'QA', 'QAT'),
+(180, 'Reunion', 'Reunion', '+262', 'RE', 'REU'),
+(181, 'Romania', 'Romanian', '+40', 'RO', 'ROU'),
+(182, 'Russian Federation', 'Russian', '+7', 'RU', 'RUS'),
+(183, 'Rwanda', 'Rwandan', '+250', 'RW', 'RWA'),
+(184, 'Saint Barthelemy', 'Saint Barthélemois', '+590', 'BL', 'BLM'),
+(185, 'Saint Helena', 'Saint Helenians', '+290', 'SH', 'SHN'),
+(186, 'Saint Kitts And Nevis', 'Kittitian/Nevisian', '+1', 'KN', 'KNA'),
+(187, 'Saint Lucia', 'Saint Lucian', '+1', 'LC', 'LCA'),
+(188, 'Saint Martin', 'Saint Martiner', '+590', 'MF', 'MAF'),
+(189, 'Saint Pierre And Miquelon', 'Saint-Pierrais/Miquelonnais', '+508', 'PM', 'PSM'),
+(190, 'Saint Vincent And Grenadines', 'Vincentians', '+1', 'VC', 'VCT'),
+(191, 'Samoa', 'Samoan', '+685', 'WS', 'WSM'),
+(192, 'San Marino', 'San Marinese', '+378', 'SM', 'SMR'),
+(193, 'Sao Tome And Principe', 'Sao Tomean', '+239', 'ST', 'STP'),
+(194, 'Saudi Arabia', 'Saudi', '+996', 'SA', 'SAU'),
+(195, 'Senegal', 'Senegalese', '+221', 'SN', 'SEN'),
+(196, 'Serbia', 'Serbian', '+381', 'RS', 'SRB'),
+(197, 'Seychelles', 'Seychellois', '+248', 'SC', 'SYC'),
+(198, 'Sierra Leone', 'Sierra Leonean', '+232', 'SL', 'SLE'),
+(199, 'Sint Maarten', 'Sint Maartener', '+1', 'SX', 'SXM'),
+(200, 'Slovakia', 'Slovakian', '+421', 'SK', 'SVK'),
+(201, 'Slovenia', 'Slovenian', '+386', 'SI', 'SVN'),
+(202, 'Solomon Islands', 'Solomon Islander', '+677', 'SB', 'SLB'),
+(203, 'Somalia', 'Somali', '+252', 'SO', 'SOM'),
+(204, 'South Africa', 'South African', '+27', 'ZA', 'ZAF'),
+(205, 'South Sudan', 'South Sudanese', '+211', 'SS', 'SSD'),
+(206, 'Spain', 'Spanish', '+34', 'ES', 'ESP'),
+(207, 'Sri Lanka', 'Sri Lankan', '+94', 'LK', 'LKA'),
+(208, 'Sudan', 'Sudanese', '+249', 'SD', 'SDN'),
+(209, 'Suriname', 'Surinamese', '+597', 'SR', 'SUR'),
+(210, 'Svalbard And Jan Mayen', 'Svalbard And Jan Mayen', '+47', 'SJ', 'SJM'),
+(211, 'Swaziland', 'Swazi', '+268', 'SZ', 'SWZ'),
+(212, 'Sweden', 'Swedish', '+46', 'SE', 'SWE'),
+(213, 'Switzerland', 'Swiss', '+41', 'CH', 'CHE'),
+(214, 'Syria', 'Syrian', '+963', 'SY', 'SYR'),
+(215, 'Taiwan', 'Taiwanese', '+886', 'TW', 'TWN'),
+(216, 'Tajikistan', 'Tajik', '+992', 'TJ', 'TJK'),
+(217, 'Tanzania', 'Tanzanian', '+255', 'TZ', 'TZA'),
+(218, 'Thailand', 'Thai', '+66', 'TH', 'THA'),
+(219, 'Timor-Leste', 'Timorese', '+670', 'TL', 'TLS'),
+(220, 'Togo', 'Togolese', '+228', 'TG', 'TGO'),
+(221, 'Tokelau', 'Tokelau', '+690', 'TK', 'TKL'),
+(222, 'Tonga', 'Tongan', '+676', 'TO', 'TON'),
+(223, 'Trinidad And Tobago', 'Trinidadian/Tobagonian', '+1', 'TT', 'TTO'),
+(224, 'Tunisia', 'Tunisian', '+216', 'TN', 'TUN'),
+(225, 'Turkey', 'Turkish', '+90', 'TR', 'TUR'),
+(226, 'Turkmenistan', 'Turkmen', '+993', 'TM', 'TKM'),
+(227, 'Turks And Caicos Islands', 'Turks And Caicos Islander', '+1', 'TC', 'TCA'),
+(228, 'Tuvalu', 'Tuvaluan', '+688', 'TV', 'TUV'),
+(229, 'Uganda', 'Ugandan', '+256', 'UG', 'UGA'),
+(230, 'Ukraine', 'Ukrainian', '+380', 'UA', 'UKR'),
+(231, 'United Arab Emirates', 'Emirati', '+971', 'AE', 'ARE'),
+(232, 'United Kingdom', 'British', '+44', 'GB', 'GBR'),
+(233, 'United States', 'American', '+1', 'US', 'USA'),
+(234, 'Uruguay', 'Uruguayan', '+598', 'UY', 'URY'),
+(235, 'Uzbekistan', 'Uzbekistani', '+998', 'UZ', 'UZB'),
+(236, 'Vanuatu', 'Vanuatu', '+678', 'VU', 'VUT'),
+(237, 'Vatican City (Holy See)', 'Vatican Citizen', '+379', 'VA', 'VAT'),
+(238, 'Venezuela', 'Venezuelan', '+58', 'VE', 'VEN'),
+(239, 'Vietnam', 'Vietnamese', '+84', 'VN', 'VNM'),
+(240, 'Virgin Islands, U.S.', 'U.S Virgin Islander', '+1', 'VI', 'VIR'),
+(241, 'Wallis And Futuna', 'Welsh', '+681', 'WF', 'WLF'),
+(242, 'Western Sahara', 'Western Saharan', '+212', 'EH', 'ESH'),
+(243, 'Yemen', 'Yemenite', '+967', 'YE', 'YEM'),
+(244, 'Zambia', 'Zambian', '+260', 'ZM', 'ZMB'),
+(245, 'Zimbabwe', 'Zimbabwean', '+263', 'ZW', 'ZWE');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `countries`
+--
+ALTER TABLE `countries`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `countries`
+--
+ALTER TABLE `countries`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
