@@ -12,5 +12,6 @@ This repository includes
   You can choose to import the database table or connect to your databse and run the countries.php file to insert using the prepared SQL statement. You can modify the variables to insert only what you need.
 
 ---- I have included other file formats so you can choose which suits you.
+Included formats are as; .sql, .csv, .json, .php, .mediawiki, .pdf, .tex, .xml, and . yml
 
 Thank you for stopping by
